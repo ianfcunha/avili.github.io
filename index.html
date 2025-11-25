@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AVILI — Infraestrutura Digital, Migração e Hospedagem</title>
-  <meta name="description" content="AVILI: migração sem downtime, recuperação emergencial e hospedagem gerenciada. Diagnóstico gratuito.">
+  <title>Avili — Migração, Recuperação e Hospedagem Gerenciada</title>
+  <meta name="description" content="AVILI: migração sem downtime, recuperação emergencial, otimização e hospedagem gerenciada. Atendimento 100% remoto. Diagnóstico gratuito em 5 minutos.">
   <meta name="theme-color" content="#0f0f12">
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,13 +13,13 @@
   <style>
     :root{
       --bg:#0f0f12;
-      --panel:#0c1013;
+      --panel:#121417;
       --muted:#b9c1c3;
       --text:#F3FBF8;
       --accent1:#FFCC4D;
       --accent2:#FF914D;
       --accent-grad:linear-gradient(90deg,var(--accent1),var(--accent2));
-      --radius:14px;
+      --radius:12px;
     }
 
     *{font-family:'Inter',sans-serif}
@@ -27,271 +27,216 @@
     body{
       margin:0;
       background:
-        radial-gradient(700px 400px at 10% 10%, rgba(255,145,77,0.03), transparent),
-        radial-gradient(700px 400px at 90% 90%, rgba(255,204,77,0.02), transparent),
+        radial-gradient(700px 350px at 10% 10%, rgba(255,145,77,0.02), transparent),
+        radial-gradient(600px 300px at 90% 90%, rgba(255,204,77,0.02), transparent),
         var(--bg);
       color:var(--text);
       -webkit-font-smoothing:antialiased;
     }
 
-    a{text-decoration:none;color:inherit}
-    .container-lg{max-width:1140px}
+    a{color:inherit;text-decoration:none;}
+    .container-lg{max-width:1140px;}
 
     .navwrap{
-      position:sticky;
-      top:0;
-      backdrop-filter:blur(8px);
-      background:rgba(15,15,18,.75);
-      border-bottom:1px solid rgba(255,255,255,.04);
-      z-index:10;
+      backdrop-filter:blur(10px);
+      background:rgba(15,15,18,.85);
+      border-bottom:1px solid rgba(255,255,255,0.03);
     }
 
-    .hero{padding:70px 16px}
-    .hero h1{font-weight:800;font-size:clamp(2rem,5vw,3.2rem);line-height:1.1}
+    .hero{padding:64px 16px;}
+    .hero h1{font-weight:800;letter-spacing:-.4px;}
 
-    .lead{color:var(--muted);max-width:52ch}
-
-    .section-panel{
-      border-top:1px solid rgba(255,255,255,.03);
-      border-bottom:1px solid rgba(255,255,255,.03);
-    }
-
+    .lead{color:var(--muted);}
     .card-panel{
       background:var(--panel);
-      border:1px solid rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,0.04);
       border-radius:var(--radius);
-      padding:22px;
+      padding:20px;
     }
 
     .btn-primary-gradient{
       background:var(--accent-grad);
-      color:#0b100b;
-      font-weight:700;
       border:none;
-      border-radius:12px;
-      padding:.75rem 1.3rem;
-      box-shadow:0 10px 30px rgba(255,145,77,.15);
+      font-weight:700;
+      padding:.7rem 1.4rem;
+      border-radius:10px;
+      color:#000;
+      box-shadow:0 10px 30px rgba(255,145,77,.18);
       transition:.2s ease;
     }
-
-    .btn-primary-gradient:hover{
-      transform:translateY(-2px) scale(1.01);
-      box-shadow:0 16px 45px rgba(255,145,77,.25);
-    }
+    .btn-primary-gradient:hover{transform:translateY(-2px);}
 
     .btn-outline-soft{
       border:1px solid rgba(255,255,255,.08);
       color:var(--muted);
-      border-radius:12px;
+      border-radius:10px;
       background:transparent;
-      padding:.7rem 1rem;
+      padding:.6rem 1rem;
     }
 
-    .reveal{
-      opacity:0;
-      transform:translateY(32px);
-      transition:.7s ease;
-    }
-
-    .reveal.active{
-      opacity:1;
-      transform:translateY(0);
-    }
+    .reveal{opacity:0;transform:translateY(30px);transition:.7s ease;}
+    .reveal.active{opacity:1;transform:translateY(0);}
 
     .badge-featured{
       background:var(--accent-grad);
-      color:#0c0c0c;
-      font-size:.72rem;
-      font-weight:700;
-      padding:.35rem .6rem;
       border-radius:999px;
-      display:inline-block;
+      font-size:.7rem;
+      font-weight:700;
+      padding:.3rem .6rem;
+      color:#000;
     }
 
-    .service-card{position:relative;overflow:hidden}
-    .service-card:hover{transform:translateY(-3px);transition:.2s ease}
-
     footer{
-      border-top:1px solid rgba(255,255,255,.05);
+      border-top:1px solid rgba(255,255,255,0.03);
       padding:2rem 0;
       color:var(--muted);
     }
-
-    .whatsapp-float{
-      position:fixed;
-      right:20px;
-      bottom:20px;
-      background:var(--accent-grad);
-      color:#000;
-      font-weight:700;
-      padding:14px 22px;
-      border-radius:999px;
-      box-shadow:0 10px 40px rgba(255,145,77,.35);
-      z-index:99;
-    }
   </style>
 </head>
-
 <body>
 
 <nav class="navwrap">
   <div class="container container-lg d-flex justify-content-between align-items-center py-3">
-    <img src="avili-logo.svg" height="44" alt="AVILI">
-    <a href="https://wa.me/SEUNUMERO" class="btn btn-primary-gradient btn-sm">Diagnóstico grátis</a>
+    <img src="avili-logo.svg" height="46">
+
+    <div class="d-flex gap-2">
+      <a class="btn btn-sm btn-outline-soft d-none d-md-inline" href="#pricing">Preços</a>
+      <a class="btn btn-sm btn-outline-soft d-none d-md-inline" href="#how">Como funciona</a>
+      <a class="btn btn-sm btn-primary-gradient" href="https://wa.me/SEUNUMERO">Diagnóstico grátis</a>
+    </div>
   </div>
 </nav>
 
 <header class="hero">
   <div class="container container-lg">
-    <div class="row align-items-center g-4">
+    <div class="row align-items-center gy-4">
       <div class="col-lg-6">
-        <h1>Infraestrutura profissional para seu site operar com máxima estabilidade.</h1>
-        <p class="lead">Migração segura, recuperação rápida e hospedagem gerenciada por especialistas.</p>
+        <h1>Seu site está em boas mãos — migração, recuperação e hospedagem sem complicação.</h1>
+        <p class="lead">
+          Migrações sem downtime, recuperação emergencial, otimização e suporte técnico dedicado. 100% remoto, com garantia e transparência em cada etapa.
+        </p>
 
-        <div class="d-flex gap-3 mt-4">
-          <a href="https://wa.me/SEUNUMERO" class="btn btn-primary-gradient btn-lg">Solicitar diagnóstico</a>
-          <a href="#services" class="btn btn-outline-soft btn-lg">Ver soluções</a>
+        <div class="d-flex gap-3">
+          <a class="btn btn-primary-gradient btn-lg" href="https://wa.me/SEUNUMERO">Solicitar diagnóstico grátis</a>
+          <a class="btn btn-outline-soft btn-lg" href="#services">Ver serviços</a>
         </div>
+
+        <ul class="mt-4" style="color:var(--muted);">
+          <li>Diagnóstico gratuito em até 5 minutos</li>
+          <li>Backup antes de qualquer ação e rollback seguro</li>
+          <li>Planos mensais a partir de R$150 com suporte prioritário</li>
+        </ul>
       </div>
 
       <div class="col-lg-6">
-        <div class="card-panel">
-          <svg width="100%" height="260" viewBox="0 0 800 500">
+        <div class="card-panel reveal">
+          <div id="onlineCount" class="text-secondary small mb-2">3 especialistas online agora</div>
+
+          <svg width="100%" height="240" viewBox="0 0 700 400">
             <defs>
-              <linearGradient id="glow" x1="0" x2="1">
+              <linearGradient id="grad" x1="0" x2="1">
                 <stop offset="0%" stop-color="#FFCC4D"/>
                 <stop offset="100%" stop-color="#FF914D"/>
               </linearGradient>
             </defs>
-            <rect x="40" y="80" width="520" height="260" rx="20" fill="#0b1215"/>
-            <rect x="100" y="140" width="160" height="140" rx="16" fill="#0f1a1f"/>
-            <rect x="130" y="170" width="100" height="16" rx="6" fill="#FFCC4D"/>
-            <rect x="130" y="200" width="100" height="16" rx="6" fill="#FF914D"/>
-            <ellipse cx="460" cy="210" rx="80" ry="50" fill="url(#glow)" opacity=".15"/>
-            <line x1="260" y1="210" x2="360" y2="210" stroke="#FFCC4D" stroke-width="3" stroke-dasharray="6 6"/>
-            <circle cx="610" cy="210" r="42" fill="#0f1418" stroke="#FFCC4D"/>
-            <path d="M590 210 l12 12 l20 -20" stroke="#FFCC4D" stroke-width="3" fill="none"/>
+            <rect x="50" y="90" width="500" height="220" rx="20" fill="#0b1215"/>
+            <circle cx="580" cy="200" r="60" fill="url(#grad)" opacity=".12"/>
+            <rect x="150" y="140" width="200" height="110" rx="15" fill="#112026"/>
+            <rect x="180" y="170" width="140" height="12" rx="6" fill="#FFCC4D"/>
+            <rect x="180" y="195" width="140" height="12" rx="6" fill="#FF914D"/>
           </svg>
+
+          <h5 class="mt-3">Entrega segura em poucas horas</h5>
+          <p style="color:var(--muted);margin:0">
+            Checklist e comunicação clara: você sabe o que será feito e quando. Decisões em conjunto — sem surpresas.
+          </p>
         </div>
       </div>
     </div>
   </div>
 </header>
 
-<section class="section-panel py-5">
-  <div class="container container-lg">
-    <div class="card-panel reveal">
-      <h3>Sobre a AVILI</h3>
-      <p class="text-secondary">
-        Somos uma empresa especializada em estabilidade digital, infraestrutura web e ambientes de alta performance.
-      </p>
-    </div>
-  </div>
-</section>
-
-<section id="services" class="section-panel py-5">
+<section id="services" class="py-5">
   <div class="container container-lg">
 
-    <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-4">
-      <h3>Soluções AVILI</h3>
-      <div class="text-muted small" id="onlineCount">3 especialistas online agora</div>
-    </div>
+    <h3>Serviços</h3>
+    <p style="color:var(--muted)">
+      Soluções claras e entregáveis — pensadas tanto para clientes leigos quanto para equipes técnicas.
+    </p>
 
-    <div class="row g-4">
+    <div class="row g-4 mt-3">
 
-      <div class="col-md-4 reveal">
-        <div class="card-panel service-card h-100">
+      <div class="col-md-6 reveal">
+        <div class="card-panel">
           <span class="badge-featured">Mais contratado</span>
-          <h5 class="mt-2">Migração segura</h5>
-          <p class="text-secondary small">Mudamos seu site de servidor sem queda.</p>
-          <div class="text-secondary small">Plano mais comum: <strong>Plano Start</strong></div>
+          <h5>Migração segura</h5>
+          <p class="text-secondary">
+            Migração entre hosts/painéis sem downtime. Testes e rollback garantidos.
+          </p>
         </div>
       </div>
 
-      <div class="col-md-4 reveal">
-        <div class="card-panel service-card h-100">
-          <h5 class="mt-2">Recuperação emergencial</h5>
-          <p class="text-secondary small">Remoção de vírus, erros e restauração.</p>
-          <div class="text-secondary small">Plano indicado: <strong>Plano Avançado</strong></div>
+      <div class="col-md-6 reveal">
+        <div class="card-panel">
+          <h5>Recuperação emergencial</h5>
+          <p class="text-secondary">
+            Correção de erros, remoção de malwares e restauração com garantia.
+          </p>
         </div>
       </div>
 
-      <div class="col-md-4 reveal">
-        <div class="card-panel service-card h-100">
-          <h5 class="mt-2">Hospedagem gerenciada</h5>
-          <p class="text-secondary small">Backups, firewall e monitoramento 24h.</p>
-          <div class="text-secondary small">Plano mais escolhido: <strong>Plano Pro</strong></div>
+      <div class="col-md-6 reveal">
+        <div class="card-panel">
+          <h5>Otimização & Performance</h5>
+          <p class="text-secondary">
+            Tuning de PHP/MySQL, cache e CDN para melhoria real de velocidade.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 reveal">
+        <div class="card-panel">
+          <h5>Hospedagem gerenciada</h5>
+          <p class="text-secondary">
+            Planos com backups, monitoramento e suporte técnico dedicado.
+          </p>
         </div>
       </div>
 
     </div>
-  </div>
-</section>
-
-<section class="py-5">
-  <div class="container container-lg">
-    <div class="card-panel reveal">
-      <h3>Como funciona</h3>
-      <ol class="text-secondary mt-2">
-        <li>Diagnóstico gratuito</li>
-        <li>Execução segura</li>
-        <li>Entrega validada</li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-<section class="section-panel py-5">
-  <div class="container container-lg">
-    <h3>Dúvidas frequentes</h3>
-    <div class="card-panel reveal mt-3">
-      <p><strong>Site sai do ar?</strong><br> Trabalhamos com migração segura.</p>
-      <p><strong>Recebo suporte?</strong><br> Sim, diretamente com especialistas.</p>
-    </div>
-  </div>
-</section>
-
-<section class="py-5">
-  <div class="container container-lg text-center">
-    <h4>Fale agora com um especialista</h4>
-    <a href="https://wa.me/SEUNUMERO" class="btn btn-primary-gradient btn-lg mt-2">Abrir WhatsApp</a>
   </div>
 </section>
 
 <footer>
-  <div class="container container-lg d-flex flex-column flex-md-row justify-content-between">
-    <div>© <span id="year"></span> AVILI</div>
-    <div>contato@avili.com</div>
+  <div class="container container-lg d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <div>© <span id="year"></span> AVILI - Seu site funcionando. Sem complicação.</div>
+    <div style="color:var(--muted)">contato@avili.com</div>
   </div>
 </footer>
-
-<a href="https://wa.me/SEUNUMERO" class="whatsapp-float">WhatsApp</a>
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
+  // Reveal animation
   const revealEls = document.querySelectorAll('.reveal');
-
-  const revealObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(entry=>{
       if(entry.isIntersecting){
         entry.target.classList.add('active');
       }
     });
-  }, { threshold: 0.15 });
+  },{threshold:0.15});
+  revealEls.forEach(el=>observer.observe(el));
 
-  revealEls.forEach(el => revealObserver.observe(el));
-
+  // Fake online specialists
   function updateOnline(){
     const el = document.getElementById("onlineCount");
     if(!el) return;
-    const base = 3;
-    const extra = Math.floor(Math.random()*3);
-    el.textContent = `${base+extra} especialistas online agora`;
+    const n = 3 + Math.floor(Math.random()*3);
+    el.textContent = `${n} especialistas online agora`;
   }
-
-  updateOnline();
   setInterval(updateOnline,5000);
+  updateOnline();
 </script>
 
 </body>
