@@ -10,11 +10,23 @@
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="extras.css">
-    
     <style>
         :root{ --bg: #0f0f12; /* dark base */ --panel: #121417; /* card background */ --muted: #b9c1c3; /* secondary text (lighter for legibility) */ --text: #F3FBF8; /* main text */ --accent1: #FFCC4D; /* gold */ --accent2: #FF914D; /* orange */ --accent-grad: linear-gradient(90deg, var(--accent1), var(--accent2)); --glass: rgba(255,255,255,0.025); --radius: 12px; --btn-padding-y: 0.65rem; --btn-padding-x: 1.05rem; } html,body{height:100%;} body{ margin:0; background: radial-gradient(700px 350px at 10% 10%, rgba(255,145,77,0.02), transparent), radial-gradient(600px 300px at 90% 90%, rgba(255,204,77,0.02), transparent), var(--bg); color:var(--text); font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial; -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale; line-height:1.5; } a { color: inherit; text-decoration: none; } .container-lg{ max-width:1140px; } /* NAV */ .navwrap{backdrop-filter: blur(6px); background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent); border-bottom:1px solid rgba(255,255,255,0.03);} .brand { display:flex; align-items:center; gap:.85rem; } .brand img { height:46px; } .brand .meta { line-height:1; } .brand .title { font-weight:800; letter-spacing:1.2px; font-size:1rem; color:var(--text); } .brand .slogan { color:var(--muted); font-size:.8rem; margin-top:2px; } /* HERO */ .hero { padding:64px 16px; } .hero h1 { font-size:2.2rem; margin-bottom:.35rem; font-weight:800; letter-spacing:-0.4px; color:var(--text); } .lead { color:var(--muted); font-size:1rem; margin-bottom:1.25rem; max-width:50ch; } .card-panel{ background: linear-gradient(180deg, rgba(255,255,255,0.016), rgba(255,255,255,0.01)); border:1px solid rgba(255,255,255,0.04); padding:20px; border-radius:var(--radius); } /* Buttons improved spacing */ .btn-primary-gradient{ background: var(--accent-grad); color:#0b100b; border:none; font-weight:700; padding:var(--btn-padding-y) var(--btn-padding-x); box-shadow: 0 8px 28px rgba(255,145,77,0.10); border-radius:10px; transition: transform .12s ease, box-shadow .12s ease; } .btn-primary-gradient:hover{ transform: translateY(-3px); box-shadow: 0 12px 40px rgba(255,145,77,0.14); } .btn-outline-soft{ border:1px solid rgba(255,255,255,0.06); color:var(--muted); background:transparent; padding:.6rem .9rem; border-radius:10px; } /* Services & icons */ .service-icon { width:52px; height:52px; display:flex; align-items:center; justify-content:center; border-radius:12px; margin-right:14px; flex-shrink:0; } .service-title { font-weight:700; color:var(--text); font-size:1rem; } .service-desc { color:var(--muted); font-size:.95rem; margin-top:4px; } /* Price */ .price { font-size:1.15rem; font-weight:800; color:var(--text); } /* Illustrations contrast */ .feature-ill { border-radius:14px; overflow:hidden; border:1px solid rgba(255,255,255,0.03); background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00)); } /* Testimonials */ .quote { color:var(--muted); font-style:italic; margin-top:8px; } /* Footer */ footer { color:var(--muted); padding:2.25rem 0; border-top:1px solid rgba(255,255,255,0.02); } /* Accessibility small */ .sr-only { position: absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; } /* Responsive */ @media (min-width:992px){ .hero h1{font-size:3rem;} }
+/* ===== Dark UI premium glow ===== */
+        body::before {
+          content: "";
+          position: fixed;
+          inset: 0;
+          background:
+            radial-gradient(800px 400px at 15% 10%, rgba(255,204,77,0.04), transparent),
+            radial-gradient(700px 350px at 90% 90%, rgba(255,145,77,0.04), transparent);
+          pointer-events: none;
+          z-index: -1;
+        }
     </style>
-</head>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+    </head>
 
 <body>
     <!-- NAV -->
@@ -371,6 +383,7 @@
         document.getElementById('year').textContent = new Date().getFullYear(); // Simple form -> open WhatsApp with message (demo) document.getElementById('leadForm').addEventListener('submit', function(e){ e.preventDefault(); const nome = this.querySelector('input[type="text"]').value || 'Cliente'; const site = this.querySelector('input[placeholder="Site ou domínio (opcional)"]').value || ''; const msg = encodeURIComponent('Olá AVILI, sou ' + nome + (site ? (' - site: ' + site) : '') + '. Preciso de ajuda com: '); window.location.href = 'https://wa.me/SEUNUMERO?text=' + msg; });
     </script>
   <script src="extras.js"></script>
+<script defer src="extras.js"></script>
 </body>
 
 </html>
