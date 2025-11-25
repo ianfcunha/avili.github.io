@@ -148,3 +148,19 @@
   color: #0f0f12;
   margin-left: 0.4rem;
 }
+/* ===== Premium Cards Effect ===== */
+.plan-card {
+  backdrop-filter: blur(8px);
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.02),
+    rgba(255,255,255,0.005)
+  );
+}
+
+.plan-card:hover {
+  box-shadow:
+    0 0 0 1px rgba(255,204,77,0.3),
+    0 30px 80px rgba(0,0,0,0.8);
+}
+
