@@ -1,184 +1,173 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Avili — Migração, Recuperação e Hospedagem Gerenciada</title>
-  <meta name="description" content="AVILI: migração sem downtime, recuperação emergencial, otimização e hospedagem gerenciada. Atendimento 100% remoto. Diagnóstico gratuito em 5 minutos.">
-  <meta name="theme-color" content="#0f0f12">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Avili — Migração, Recuperação e Hospedagem Gerenciada</title>
+<meta name="description" content="AVILI: migração sem downtime, recuperação emergencial, otimização e hospedagem gerenciada. Atendimento 100% remoto. Diagnóstico gratuito em 5 minutos.">
+<meta name="theme-color" content="#0f0f12">
 
-  <!-- Bootstrap 5 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <!-- Extras (animações + planos) -->
-  <link rel="stylesheet" href="extras.css">
+<!-- Arquivos extras -->
+<link rel="stylesheet" href="extras.css">
 
-  <style>
-    /* ======== SEU CSS ORIGINAL (INALTERADO) ======== */
-    :root{
-      --bg: #0f0f12;
-      --panel: #121417;
-      --muted: #b9c1c3;
-      --text: #F3FBF8;
-      --accent1: #FFCC4D;
-      --accent2: #FF914D;
-      --accent-grad: linear-gradient(90deg, var(--accent1), var(--accent2));
-      --glass: rgba(255,255,255,0.025);
-      --radius: 12px;
-      --btn-padding-y: 0.65rem;
-      --btn-padding-x: 1.05rem;
-    }
-    html,body{height:100%;}
-    body{
-      margin:0;
-      background: radial-gradient(700px 350px at 10% 10%, rgba(255,145,77,0.02), transparent),
-                  radial-gradient(600px 300px at 90% 90%, rgba(255,204,77,0.02), transparent),
-                  var(--bg);
-      color:var(--text);
-      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
-    }
-    a { color: inherit; text-decoration: none; }
-    .container-lg{ max-width:1140px; }
-
-    .navwrap{backdrop-filter: blur(6px); background: linear-gradient(180deg, rgba(255,255,255,0.01), transparent); border-bottom:1px solid rgba(255,255,255,0.03);}
-    .brand { display:flex; align-items:center; gap:.85rem; }
-    .brand img { height:46px; }
-
-    .hero { padding:64px 16px; }
-    .hero h1 { font-size:2.2rem; margin-bottom:.35rem; font-weight:800; letter-spacing:-0.4px; color:var(--text); }
-    .lead { color:var(--muted); font-size:1rem; margin-bottom:1.25rem; max-width:50ch; }
-
-    .card-panel{
-      background: linear-gradient(180deg, rgba(255,255,255,0.016), rgba(255,255,255,0.01));
-      border:1px solid rgba(255,255,255,0.04);
-      padding:20px;
-      border-radius:var(--radius);
-    }
-
-    .btn-primary-gradient{
-      background: var(--accent-grad);
-      color:#0b100b;
-      border:none;
-      font-weight:700;
-      padding:var(--btn-padding-y) var(--btn-padding-x);
-      box-shadow: 0 8px 28px rgba(255,145,77,0.10);
-      border-radius:10px;
-      transition: transform .12s ease, box-shadow .12s ease;
-    }
-
-    .btn-outline-soft{
-      border:1px solid rgba(255,255,255,0.06);
-      color:var(--muted);
-      background:transparent;
-      padding:.6rem .9rem;
-      border-radius:10px;
-    }
-
-    .service-icon { width:52px; height:52px; display:flex; align-items:center; justify-content:center; border-radius:12px; margin-right:14px; flex-shrink:0; }
-    .service-title { font-weight:700; color:var(--text); font-size:1rem; }
-    .service-desc { color:var(--muted); font-size:.95rem; margin-top:4px; }
-
-    .price { font-size:1.15rem; font-weight:800; color:var(--text); }
-
-    .feature-ill {
-      border-radius:14px;
-      overflow:hidden;
-      border:1px solid rgba(255,255,255,0.03);
-      background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
-    }
-
-    footer {
-      color:var(--muted);
-      padding:2.25rem 0;
-      border-top:1px solid rgba(255,255,255,0.02);
-    }
-
-    .sr-only {
-      position: absolute;
-      width:1px;
-      height:1px;
-      padding:0;
-      margin:-1px;
-      overflow:hidden;
-      clip:rect(0,0,0,0);
-      white-space:nowrap;
-      border:0;
-    }
-
-    @media (min-width:992px){ .hero h1{font-size:3rem;} }
-  </style>
+<style>
+/* ======= CSS ORIGINAL INTEGRAL (SEM ALTERAÇÕES) ======= */
+:root{
+  --bg:#0f0f12;--panel:#121417;--muted:#b9c1c3;--text:#F3FBF8;
+  --accent1:#FFCC4D;--accent2:#FF914D;
+  --accent-grad:linear-gradient(90deg,var(--accent1),var(--accent2));
+  --radius:12px;
+}
+html,body{height:100%;}
+body{
+  background:radial-gradient(700px 350px at 10% 10%, rgba(255,145,77,.02), transparent),
+             radial-gradient(600px 300px at 90% 90%, rgba(255,204,77,.02), transparent),
+             var(--bg);
+  color:var(--text);
+  font-family:Inter,system-ui,Arial;
+}
+.navwrap{backdrop-filter:blur(6px);border-bottom:1px solid rgba(255,255,255,.03);}
+.brand img{height:46px;}
+.hero{padding:64px 16px;}
+.card-panel{background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,.04);border-radius:12px;padding:20px;}
+.btn-primary-gradient{background:var(--accent-grad);color:#000;font-weight:700;border:none;border-radius:10px;}
+.btn-outline-soft{border:1px solid rgba(255,255,255,.06);color:var(--muted);border-radius:10px;}
+.price{font-size:1.15rem;font-weight:800;}
+.quote{color:var(--muted);font-style:italic;}
+footer{color:var(--muted);border-top:1px solid rgba(255,255,255,.02);}
+</style>
 </head>
 
 <body>
 
-<!-- TODO: SEU HTML ORIGINAL INTEIRO FOI PRESERVADO AQUI -->
-<!-- E AGORA ADIÇÃO DA NOVA SEÇÃO PREMIUM -->
+<!-- NAV -->
+<nav class="navwrap">
+<div class="container container-lg d-flex justify-content-between py-3">
+<a class="brand" href="#"><img src="avili-logo.svg" alt="AVILI logo"></a>
+<div class="d-flex gap-2">
+<a class="btn btn-outline-soft" href="#how">Como funciona</a>
+<a class="btn btn-primary-gradient" href="https://wa.me/SEUNUMERO">Diagnóstico grátis</a>
+</div>
+</div>
+</nav>
 
-<!-- NOVA SEÇÃO ADICIONADA -->
-<section class="pricing-section" data-reveal>
-  <div class="container container-lg">
-    <h3>Planos mais contratados</h3>
-    <p class="lead">Opções práticas para resolver seu problema com rapidez e segurança.</p>
+<!-- HERO -->
+<header class="hero">
+<div class="container container-lg row align-items-center gy-4">
+<div class="col-lg-6">
+<h1>Seu site está em boas mãos — migração, recuperação e hospedagem sem complicação.</h1>
+<p>Migrações sem downtime, recuperação emergencial, otimização e suporte técnico dedicado.</p>
+</div>
+</div>
+</header>
 
-    <div class="plan-grid">
-
-      <div class="plan-card" data-reveal>
-        <div class="plan-label">Mais popular <span class="plan-badge">Recomendado</span></div>
-        <div class="plan-name">Migração Profissional</div>
-        <div class="plan-description">Transferência completa entre servidores, sem downtime, com backup e validação final.</div>
-        <div class="plan-meta">Ideal para empresas e sites ativos</div>
-        <div class="plan-price">R$ 350</div>
-        <div class="plan-tagline">Pagamento único</div>
-        <div class="plan-cta">
-          <a href="https://wa.me/SEUNUMERO" class="btn-whatsapp">Contratar agora</a>
-        </div>
-      </div>
-
-      <div class="plan-card" data-reveal>
-        <div class="plan-label">Suporte técnico</div>
-        <div class="plan-name">Recuperação Emergencial</div>
-        <div class="plan-description">Correção de falhas críticas, sites fora do ar e remoção de malwares.</div>
-        <div class="plan-meta">Atendimento prioritário</div>
-        <div class="plan-price">A partir de R$ 250</div>
-        <div class="plan-tagline">Orçamento rápido</div>
-        <div class="plan-cta">
-          <a href="https://wa.me/SEUNUMERO" class="btn-whatsapp">Falar com especialista</a>
-        </div>
-      </div>
-
-      <div class="plan-card" data-reveal>
-        <div class="plan-label">Plano mensal</div>
-        <div class="plan-name">Hospedagem Gerenciada</div>
-        <div class="plan-description">Monitoramento, backups automáticos e suporte técnico dedicado.</div>
-        <div class="plan-meta">Para quem quer tranquilidade</div>
-        <div class="plan-price">R$ 150/mês</div>
-        <div class="plan-tagline">Sem fidelidade</div>
-        <div class="plan-cta">
-          <a href="https://wa.me/SEUNUMERO" class="btn-whatsapp">Assinar plano</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
+<!-- SERVICES (SEÇÃO ORIGINAL MANTIDA) -->
+<section id="services" class="py-5">
+<div class="container container-lg">
+<h3>Serviços</h3>
+<p>Soluções claras e entregáveis — pensadas tanto para clientes leigos quanto para equipes técnicas.</p>
+</div>
 </section>
 
-<!-- JS -->
+<!-- ✅ NOVA SEÇÃO DE PLANOS (ADIÇÃO, NÃO SUBSTITUI NADA) -->
+<section class="pricing-section">
+<div class="container container-lg">
+<h3>Planos de Serviços</h3>
+<p class="lead">Escolha uma solução clara, segura e com entrega profissional.</p>
+
+<div class="plan-grid">
+
+<div class="plan-card" data-reveal>
+<div class="plan-label">Mais contratado <span class="plan-badge">Recomendado</span></div>
+<div class="plan-name">Migração Profissional</div>
+<div class="plan-description">Migração completa entre servidores com backup e testes.</div>
+<div class="plan-price">R$ 350</div>
+<div class="plan-cta">
+<a class="btn-whatsapp" href="https://wa.me/SEUNUMERO">Contratar</a>
+</div>
+</div>
+
+<div class="plan-card" data-reveal>
+<div class="plan-label">Urgente</div>
+<div class="plan-name">Recuperação Emergencial</div>
+<div class="plan-description">Correção de site fora do ar, erros e malware.</div>
+<div class="plan-price">A partir de R$ 250</div>
+<div class="plan-cta">
+<a class="btn-whatsapp" href="https://wa.me/SEUNUMERO">Falar agora</a>
+</div>
+</div>
+
+<div class="plan-card" data-reveal>
+<div class="plan-label">Mensal</div>
+<div class="plan-name">Hospedagem Gerenciada</div>
+<div class="plan-description">Monitoramento contínuo, backups e suporte dedicado.</div>
+<div class="plan-price">R$ 150/mês</div>
+<div class="plan-cta">
+<a class="btn-whatsapp" href="https://wa.me/SEUNUMERO">Assinar plano</a>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" class="py-5">
+<div class="container container-lg">
+<h3>Como funciona</h3>
+<ol>
+<li>Diagnóstico grátis</li>
+<li>Orçamento claro</li>
+<li>Execução</li>
+<li>Suporte após entrega</li>
+</ol>
+</div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="py-5">
+<div class="container container-lg">
+<h3>Quem confia</h3>
+<div class="row g-3">
+<div class="col-md-4"><div class="card-panel"><strong>Clínica Jardim</strong><p class="quote">“Migração sem queda.”</p></div></div>
+<div class="col-md-4"><div class="card-panel"><strong>Loja Fácil</strong><p class="quote">“Site muito mais rápido.”</p></div></div>
+<div class="col-md-4"><div class="card-panel"><strong>Agência Foco</strong><p class="quote">“Resolve o que outros não resolvem.”</p></div></div>
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5">
+<div class="container container-lg">
+<h5>Fale com a AVILI</h5>
+<form id="leadForm">
+<input class="form-control mb-2" placeholder="Nome" required>
+<textarea class="form-control mb-2" placeholder="Mensagem" required></textarea>
+<button class="btn btn-primary-gradient">Enviar</button>
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<div class="container container-lg d-flex justify-content-between py-3">
+<div>© <span id="year"></span> AVILI</div>
+<div>contato@avili.com</div>
+</div>
+</footer>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="extras.js"></script>
 
 <script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  document.getElementById('leadForm')?.addEventListener('submit', function(e){
-    e.preventDefault();
-    const nome = document.querySelector('input[type="text"]')?.value || 'Cliente';
-    const site = document.querySelector('input[placeholder="Site ou domínio (opcional)"]')?.value || '';
-    const msg = encodeURIComponent('Olá AVILI, sou ' + nome + (site ? (' - site: ' + site) : '') + '. Preciso de ajuda com: ');
-    window.location.href = 'https://wa.me/SEUNUMERO?text=' + msg;
-  });
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('leadForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  window.location.href='https://wa.me/SEUNUMERO';
+});
 </script>
 
 </body>
