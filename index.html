@@ -521,45 +521,116 @@
     </div>
 
     <!-- BOX DE ESCOLHA RÁPIDA PREMIUM -->
-    <div class="mt-5" data-reveal>
-      <div class="card-panel p-4" style="border-radius:16px;">
+    <!-- ESCOLHA RÁPIDA — VERSÃO PREMIUM CONVERSÃO -->
+<div class="mt-5" data-reveal>
+  <div class="card-panel p-5" style="border-radius:20px; position:relative; overflow:hidden;">
 
-        <h5 class="mb-3">Escolha rápida — os planos mais usados por quem precisa resolver hoje</h5>
+    <!-- Glow de fundo -->
+    <div style="
+      position:absolute;
+      inset:-60%;
+      background: radial-gradient(circle, rgba(255,204,77,0.12), transparent 55%);
+      pointer-events:none;
+      z-index:0;">
+    </div>
 
-        <div class="d-flex flex-column gap-3">
+    <div style="position:relative; z-index:1;">
 
-          <div class="d-flex justify-content-between align-items-center">
-            <div>
-              <strong>Plano Starter</strong><br>
-              <span style="color:var(--muted); font-size:.9rem;">Blogs e sites institucionais</span>
-            </div>
+      <h4 style="margin-bottom:6px;">
+        Precisa resolver isso hoje?
+      </h4>
+
+      <p style="color:var(--muted); max-width:520px;">
+        Esses são os planos mais contratados por clientes que não podem esperar.
+        Escolha uma opção e fale comigo agora.
+      </p>
+
+      <div class="d-flex flex-column gap-3 mt-4">
+
+        <!-- PLANO 1 -->
+        <div class="d-flex justify-content-between align-items-center p-3"
+             style="border:1px solid rgba(255,255,255,0.05); border-radius:14px; background: rgba(255,255,255,0.01);">
+
+          <div>
+            <strong style="font-size:1.05rem;">Plano Starter</strong><br>
+            <span style="color:var(--muted); font-size:.9rem;">
+              Para sites simples e institucionais
+            </span>
+          </div>
+
+          <div class="text-end">
             <div class="price">R$150/mês</div>
           </div>
 
-          <div class="d-flex justify-content-between align-items-center">
-            <div>
-              <strong>Plano Pro</strong><br>
-              <span style="color:var(--muted); font-size:.9rem;">Lojas, WordPress avançado e volume de tráfego</span>
-            </div>
+        </div>
+
+        <!-- PLANO 2 -->
+        <div class="d-flex justify-content-between align-items-center p-3"
+             style="border:1px solid rgba(255,204,77,0.15); border-radius:14px; background: rgba(255,204,77,0.03);">
+
+          <div>
+            <strong style="font-size:1.05rem;">
+              Plano Pro
+              <span style="
+                margin-left:6px;
+                background:linear-gradient(90deg,#FFCC4D,#FF914D);
+                color:#0b100b;
+                font-size:.7rem;
+                font-weight:700;
+                padding:.2rem .5rem;
+                border-radius:999px;">
+                Mais escolhido
+              </span>
+            </strong><br>
+            <span style="color:var(--muted); font-size:.9rem;">
+              Sites com tráfego, lojas e performance
+            </span>
+          </div>
+
+          <div class="text-end">
             <div class="price">R$300/mês</div>
           </div>
 
-          <div class="d-flex justify-content-between align-items-center">
-            <div>
-              <strong>Plano Empresarial</strong><br>
-              <span style="color:var(--muted); font-size:.9rem;">Estruturas complexas • SLA • Múltiplos sites</span>
-            </div>
+        </div>
+
+        <!-- PLANO 3 -->
+        <div class="d-flex justify-content-between align-items-center p-3"
+             style="border:1px solid rgba(255,255,255,0.05); border-radius:14px; background: rgba(255,255,255,0.01);">
+
+          <div>
+            <strong style="font-size:1.05rem;">Plano Empresarial</strong><br>
+            <span style="color:var(--muted); font-size:.9rem;">
+              Estruturas críticas, SLA e múltiplos sites
+            </span>
+          </div>
+
+          <div class="text-end">
             <div class="price">Sob consulta</div>
           </div>
 
-          <a href="https://wa.me/SEUNUMERO" class="btn btn-primary-gradient w-100 mt-2">
-            Quero meu plano ideal agora
+        </div>
+
+        <!-- CTA FINAL -->
+        <div class="mt-4 d-grid gap-2">
+
+          <a href="https://wa.me/SEUNUMERO"
+             class="btn btn-primary-gradient btn-lg w-100"
+             style="font-size:1.05rem; padding:1rem;">
+            Quero falar com um especialista agora
           </a>
+
+          <div style="text-align:center; color:var(--muted); font-size:.85rem;">
+            Resposta média em menos de 10 minutos
+          </div>
 
         </div>
 
       </div>
+
     </div>
+  </div>
+</div>
+
 
   </div>
 </section>
