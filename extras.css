@@ -1,43 +1,121 @@
-/* ===== Ajuste final dos cards de planos ===== */
+/* ===== Animação leve de entrada (reveal) ===== */
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Grid dos planos (organização profissional) ===== */
+.plan-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.8rem;
+}
+
+@media (min-width: 768px) {
+  .plan-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .plan-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ===== Cards dos planos ===== */
 .plan-card {
-  border-radius: 18px;
-  padding: 1.5rem;
-  background: linear-gradient(
-    180deg,
-    rgba(255,255,255,0.02),
-    rgba(255,255,255,0.005)
-  );
-  border: 1px solid rgba(255,255,255,0.04);
   display: flex;
   flex-direction: column;
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  backdrop-filter: blur(8px);
+  justify-content: space-between;
+
+  border-radius: 20px;
+  padding: 1.8rem;
+  min-height: 420px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.025),
+    rgba(255,255,255,0.01)
+  );
+
+  border: 1px solid rgba(255,255,255,0.05);
 
   box-shadow:
     inset 0 0 0 1px rgba(255,255,255,0.02),
-    0 20px 55px rgba(0,0,0,0.7);
+    0 25px 80px rgba(0,0,0,0.7);
 
-  transition: all .25s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.25s ease;
 }
 
 .plan-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(255,204,77,0.35);
+  transform: translateY(-6px);
+  border-color: rgba(255,204,77,0.4);
   box-shadow:
-    0 0 0 1px rgba(255,204,77,0.3),
-    0 30px 80px rgba(0,0,0,0.85);
+    0 0 0 1px rgba(255,204,77,0.25),
+    0 35px 90px rgba(0,0,0,0.85);
 }
 
-/* ===== Botão dos planos (paleta premium) ===== */
+/* ===== Tipografia interna dos planos ===== */
+.plan-label {
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: #b9c1c3;
+  margin-bottom: .4rem;
+}
+
+.plan-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  margin-bottom: .45rem;
+  line-height: 1.3;
+  color: #F3FBF8;
+}
+
+.plan-description {
+  font-size: .95rem;
+  line-height: 1.6;
+  color: #b9c1c3;
+  margin-bottom: .9rem;
+}
+
+.plan-meta {
+  font-size: .9rem;
+  color: #b9c1c3;
+  margin-bottom: .8rem;
+}
+
+.plan-price {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin: .9rem 0 .3rem;
+}
+
+.plan-tagline {
+  font-size: .85rem;
+  color: #b9c1c3;
+  margin-bottom: 1.3rem;
+}
+
+/* ===== Botões dos planos (paleta premium) ===== */
 .btn-whatsapp{
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   border-radius: 14px;
-  padding: 0.8rem 1rem;
+  padding: .85rem 1rem;
   font-size: .95rem;
   font-weight: 700;
   letter-spacing: .2px;
