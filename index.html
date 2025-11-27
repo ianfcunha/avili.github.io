@@ -106,7 +106,6 @@
     </div>
   </div>
 </nav>
-    <!-- HERO -->
 <!-- HERO -->
 <header class="hero" data-reveal>
   <div class="container container-lg">
@@ -128,108 +127,129 @@
           <a class="btn btn-primary-gradient btn-lg" href="https://wa.me/SEUNUMERO">
             Quero estabilidade para meu site
           </a>
-
           <a class="btn btn-outline-soft btn-lg" href="#how">
             Ver como funciona
           </a>
         </div>
 
-        <!-- MICRO PROVAS -->
+        <!-- PROVAS RÁPIDAS -->
         <div class="d-flex flex-wrap gap-2 mt-4">
-          <div class="card-panel px-3 py-2" style="font-size:.85rem">
-            ✅ 120+ migrações entregues
-          </div>
-          <div class="card-panel px-3 py-2" style="font-size:.85rem">
-            ✅ 99.9% uptime em produção
-          </div>
-          <div class="card-panel px-3 py-2" style="font-size:.85rem">
-            ✅ Atendimento técnico real
-          </div>
+          <div class="card-panel px-3 py-2" style="font-size:.85rem">✅ 120+ migrações</div>
+          <div class="card-panel px-3 py-2" style="font-size:.85rem">✅ Zero downtime crítico</div>
+          <div class="card-panel px-3 py-2" style="font-size:.85rem">✅ Atendimento técnico real</div>
         </div>
 
         <!-- STATUS AO VIVO -->
         <div class="mt-4 d-flex gap-3 flex-wrap align-items-center" style="font-size:.9rem;">
           <div class="d-flex align-items-center gap-2">
             <span style="width:8px;height:8px;border-radius:999px;background:#4ade80;box-shadow:0 0 6px #4ade80;"></span>
-            2 especialistas online agora
+            Especialistas online
           </div>
-          <div style="color:var(--muted);">Resposta média: 10 minutos</div>
+          <div style="color:var(--muted);">Resposta média: 10min</div>
         </div>
 
       </div>
 
-      <!-- PAINEL TÉCNICO DIREITO -->
+      <!-- BLOCO VISUAL PREMIUM -->
       <div class="col-lg-6" data-reveal>
 
-        <div class="card-panel feature-ill p-4" style="border-radius:20px;">
+        <div class="card-panel feature-ill p-4" style="border-radius:22px; position:relative; overflow:hidden;">
 
-          <div style="font-size:.9rem; font-weight:600; margin-bottom:12px;">
-            Status da Infraestrutura
-          </div>
-
-          <!-- CHECKS -->
-          <div class="d-flex flex-column gap-2 mb-3">
-
-            <div class="d-flex align-items-center gap-2">
-              <span style="color:#4ade80;">✔</span>
-              Backup completo criado
-            </div>
-
-            <div class="d-flex align-items-center gap-2">
-              <span style="color:#4ade80;">✔</span>
-              Migração validada sem falhas
-            </div>
-
-            <div class="d-flex align-items-center gap-2">
-              <span style="color:#4ade80;">✔</span>
-              Segurança reforçada
-            </div>
-
-            <div class="d-flex align-items-center gap-2">
-              <span style="color:#4ade80;">✔</span>
-              Performance otimizada
-            </div>
-
-          </div>
-
-          <!-- MÉTRICAS -->
+          <!-- Glow background -->
           <div style="
-            border-top:1px solid rgba(255,255,255,0.05);
-            padding-top:12px;
-            display:grid;
-            grid-template-columns:1fr 1fr;
-            gap:12px;
-            font-size:.9rem;
-          ">
+            position:absolute;
+            inset:-40%;
+            background: radial-gradient(circle, rgba(255,204,77,0.12), transparent 55%);
+            pointer-events:none;
+            z-index:0;"></div>
 
-            <div>
-              <div style="color:var(--muted); font-size:.8rem;">Uptime</div>
-              <strong>99.9%</strong>
+          <div style="position:relative; z-index:1;">
+
+            <!-- MOCK DO SISTEMA -->
+            <div style="font-size:.85rem; font-weight:700; margin-bottom:10px; opacity:.9;">
+              Painel técnico ativo
             </div>
 
-            <div>
-              <div style="color:var(--muted); font-size:.8rem;">Tempo de resposta</div>
-              <strong>180ms</strong>
+            <div class="d-flex flex-wrap gap-2 mb-3">
+              <span style="padding:.35rem .65rem; border-radius:10px; background:rgba(255,255,255,0.03); font-size:.8rem;">Servidor</span>
+              <span style="padding:.35rem .65rem; border-radius:10px; background:rgba(255,255,255,0.03); font-size:.8rem;">Firewall</span>
+              <span style="padding:.35rem .65rem; border-radius:10px; background:rgba(255,255,255,0.03); font-size:.8rem;">Monitoramento</span>
             </div>
 
-            <div>
-              <div style="color:var(--muted); font-size:.8rem;">Backups ativos</div>
-              <strong>Automáticos</strong>
+            <!-- STATUS LIST -->
+            <div class="d-flex flex-column gap-2 mb-4" style="font-size:.9rem;">
+              <div>✔ Backup validado</div>
+              <div>✔ Infraestrutura estável</div>
+              <div>✔ Segurança ativa</div>
+              <div>✔ Performance em tempo real</div>
             </div>
 
-            <div>
-              <div style="color:var(--muted); font-size:.8rem;">Monitoramento</div>
-              <strong>24/7</strong>
+            <!-- MÉTRICAS COM BARRAS -->
+            <div style="display:grid; gap:14px;">
+
+              <!-- UPTIME -->
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:.8rem; margin-bottom:4px;">
+                  <span style="color:var(--muted);">Uptime</span>
+                  <strong>99.9%</strong>
+                </div>
+                <div style="height:6px; background:rgba(255,255,255,0.05); border-radius:999px; overflow:hidden;">
+                  <div style="height:100%; width:99%; background:var(--accent-grad); animation:barGrow1 2s ease-out forwards;"></div>
+                </div>
+              </div>
+
+              <!-- VELOCIDADE -->
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:.8rem; margin-bottom:4px;">
+                  <span style="color:var(--muted);">Velocidade</span>
+                  <strong>180ms</strong>
+                </div>
+                <div style="height:6px; background:rgba(255,255,255,0.05); border-radius:999px; overflow:hidden;">
+                  <div style="height:100%; width:85%; background:var(--accent-grad); animation:barGrow2 2.2s ease-out forwards;"></div>
+                </div>
+              </div>
+
+              <!-- SEGURANÇA -->
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:.8rem; margin-bottom:4px;">
+                  <span style="color:var(--muted);">Segurança</span>
+                  <strong>Alta</strong>
+                </div>
+                <div style="height:6px; background:rgba(255,255,255,0.05); border-radius:999px; overflow:hidden;">
+                  <div style="height:100%; width:92%; background:var(--accent-grad); animation:barGrow3 2.4s ease-out forwards;"></div>
+                </div>
+              </div>
+
+              <!-- BACKUP -->
+              <div>
+                <div style="display:flex; justify-content:space-between; font-size:.8rem; margin-bottom:4px;">
+                  <span style="color:var(--muted);">Backups</span>
+                  <strong>Ativos</strong>
+                </div>
+                <div style="height:6px; background:rgba(255,255,255,0.05); border-radius:999px; overflow:hidden;">
+                  <div style="height:100%; width:95%; background:var(--accent-grad); animation:barGrow4 2.6s ease-out forwards;"></div>
+                </div>
+              </div>
+
             </div>
 
           </div>
-
         </div>
-
       </div>
+
     </div>
   </div>
+
+  <!-- ANIMAÇÃO DAS BARRAS -->
+  <style>
+    @keyframes barGrow1 { from{width:0%} to{width:99%} }
+    @keyframes barGrow2 { from{width:0%} to{width:85%} }
+    @keyframes barGrow3 { from{width:0%} to{width:92%} }
+    @keyframes barGrow4 { from{width:0%} to{width:95%} }
+  </style>
+
 </header>
+
 
     <!-- SERVICES -->
     <section id="services" class="py-5" data-reveal>
