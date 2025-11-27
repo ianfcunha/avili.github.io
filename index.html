@@ -52,6 +52,18 @@
 .service-icon svg {
   filter: drop-shadow(0 0 8px rgba(255,204,77,0.2));
 }
+        /* ===== LOGO AVILI — Ajuste Premium ===== */
+.logo-avili {
+  height: 64px;
+  transition: all 0.2s ease;
+}
+
+@media (max-width: 768px) {
+  .logo-avili {
+    height: 48px;
+  }
+}
+
 
     </style>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -60,15 +72,40 @@
 
 <body>
     <!-- NAV -->
-    <nav class="navwrap" data-reveal>
-        <div class="container container-lg d-flex align-items-center justify-content-between py-3">
-            <a class="d-flex brand" href="#"> <img src="avili-logo.svg" alt="AVILI logo">
-                <!-- <div class="meta"> <div class="title">AVILI</div> <div class="slogan">Hospedagem confiável. Resultados simples.</div> </div> -->
-            </a>
-            <div class="d-flex align-items-center gap-2"> <a class="btn btn-sm btn-outline-soft d-none d-md-inline" href="#pricing">Preços</a> <a class="btn btn-sm btn-outline-soft d-none d-md-inline" href="#how">Como funciona</a> <a class="btn btn-sm btn-primary-gradient" href="https://wa.me/SEUNUMERO">Diagnóstico grátis</a>                </div>
-        </div>
-    </nav>
-    <!-- HERO -->
+   <nav class="navwrap sticky-top" data-reveal>
+  <div class="container container-lg d-flex align-items-center justify-content-between py-3">
+
+    <!-- LOGO -->
+    <a class="brand" href="#top">
+      <img src="avili-logo.svg" alt="AVILI logo" class="logo-avili">
+    </a>
+
+    <!-- MENU -->
+    <div class="d-flex align-items-center gap-2 gap-lg-3">
+
+      <a class="btn btn-sm btn-outline-soft d-none d-md-inline" href="#services">
+        Serviços
+      </a>
+
+      <a class="btn btn-sm btn-outline-soft d-none d-md-inline" href="#pricing">
+        Planos
+      </a>
+
+      <a class="btn btn-sm btn-outline-soft d-none d-md-inline" href="#how">
+        Como funciona
+      </a>
+
+      <a class="btn btn-sm btn-outline-soft d-none d-md-inline" href="#contact">
+        Contato
+      </a>
+
+      <a class="btn btn-sm btn-primary-gradient" href="https://wa.me/SEUNUMERO">
+        Diagnóstico grátis
+      </a>
+
+    </div>
+  </div>
+</nav>
     <!-- HERO -->
 <header class="hero" data-reveal>
   <div class="container container-lg">
