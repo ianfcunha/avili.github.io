@@ -171,82 +171,52 @@
         </div>
 
       </div>
+<!-- HERO RIGHT — OPÇÃO 1 (Servidor Clean) -->
+<div class="col-lg-6 d-flex justify-content-center">
 
-      <!-- LADO DIREITO — VISUAL DE "PRODUTO" -->
-      <div class="col-lg-6">
+  <div class="position-relative">
 
-        <div class="card-panel feature-ill d-flex align-items-center justify-content-center p-4"
-             style="position:relative; overflow:hidden;">
+    <svg width="420" height="300" viewBox="0 0 360 260" fill="none">
 
-          <!-- Glow de fundo estilo SaaS -->
-          <div style="
-            position:absolute;
-            inset:-60%;
-            background:
-              radial-gradient(circle, rgba(255,204,77,0.16), transparent 60%);
-            pointer-events:none;">
-          </div>
+      <defs>
+        <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFCC4D"/>
+          <stop offset="100%" stop-color="#FF914D"/>
+        </linearGradient>
+      </defs>
 
-          <!-- SERVIDOR + FLUXO DE DADOS -->
-          <svg width="100%" height="260" viewBox="0 0 360 260" fill="none"
-               xmlns="http://www.w3.org/2000/svg"
-               style="max-width:440px;">
+      <!-- SERVER -->
+      <rect x="90" y="40" width="180" height="60" rx="16" fill="#0b0f12" stroke="url(#grad1)" stroke-width="2"/>
+      <rect x="80" y="120" width="200" height="60" rx="16" fill="#0b0f12" stroke="url(#grad1)" stroke-width="2"/>
+      <rect x="90" y="200" width="180" height="40" rx="16" fill="#0b0f12" stroke="url(#grad1)" stroke-width="2"/>
 
-            <defs>
-              <linearGradient id="saasGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#FFCC4D"/>
-                <stop offset="100%" stop-color="#FF914D"/>
-              </linearGradient>
+      <!-- LEDS -->
+      <circle cx="110" cy="70" r="4" fill="#FFCC4D">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
+      </circle>
 
-              <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
-                <feMerge>
-                  <feMergeNode in="coloredBlur"/>
-                  <feMergeNode in="SourceGraphic"/>
-                </feMerge>
-              </filter>
-            </defs>
+      <circle cx="110" cy="150" r="4" fill="#FF914D">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/>
+      </circle>
 
-            <!-- LINHAS DE FLUXO -->
-            <line x1="20" y1="130" x2="150" y2="130" stroke="url(#saasGrad)" stroke-width="1.2" opacity="0.35"/>
-            <line x1="210" y1="130" x2="340" y2="130" stroke="url(#saasGrad)" stroke-width="1.2" opacity="0.35"/>
+      <circle cx="110" cy="220" r="4" fill="#FFCC4D">
+        <animate attributeName="opacity" values="0.2;1;0.2" dur="2.1s" repeatCount="indefinite"/>
+      </circle>
 
-            <!-- BLOCO CENTRAL (SERVIDOR) -->
-            <rect x="140" y="70" width="80" height="120" rx="20"
-                  fill="#0b0f12" stroke="url(#saasGrad)" stroke-width="2" filter="url(#glow)"/>
+    </svg>
 
-            <!-- LEDS -->
-            <rect x="165" y="95" width="30" height="6" rx="3" fill="#FFCC4D">
-              <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
-            </rect>
+    <div style="
+      position:absolute;
+      inset:0;
+      background: radial-gradient(circle, rgba(255,204,77,0.08), transparent 60%);
+      pointer-events:none;">
+    </div>
 
-            <rect x="165" y="113" width="30" height="6" rx="3" fill="#FF914D">
-              <animate attributeName="opacity" values="0.2;1;0.2" dur="2.5s" repeatCount="indefinite"/>
-            </rect>
+  </div>
 
-            <rect x="165" y="131" width="30" height="6" rx="3" fill="#FFCC4D">
-              <animate attributeName="opacity" values="0.3;1;0.3" dur="2.2s" repeatCount="indefinite"/>
-            </rect>
+</div>
 
-            <!-- LABELS DE STATUS -->
-            <g opacity="0.85">
-
-              <rect x="32" y="102" rx="8" ry="8" width="100" height="26"
-                    fill="rgba(0,0,0,0.55)" stroke="#FFCC4D" stroke-width="1"/>
-              <text x="46" y="120" fill="#FFCC4D" font-size="10">INPUT FLOW</text>
-
-              <rect x="228" y="102" rx="8" ry="8" width="100" height="26"
-                    fill="rgba(0,0,0,0.55)" stroke="#FF914D" stroke-width="1"/>
-              <text x="243" y="120" fill="#FF914D" font-size="10">PROCESSED</text>
-
-            </g>
-
-          </svg>
-
-        </div>
-
-      </div>
-
+      
     </div>
   </div>
 </header>
