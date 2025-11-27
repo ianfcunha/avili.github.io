@@ -149,92 +149,62 @@
 
       </div>
 
-      <!-- ILUSTRAÇÃO DIREITA — SERVIDOR + TEXTOS -->
-      <div class="col-lg-6 text-center" data-reveal>
+<!-- ILUSTRAÇÃO HERO — SERVIDOR + ORBITAIS + STATUS -->
+<div class="card-panel feature-ill d-flex align-items-center justify-content-center p-4">
 
-        <div style="position:relative; width:100%; max-width:320px; margin:0 auto;">
+<svg width="100%" height="260" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-          <!-- Texto flutuante superior -->
-          <div style="
-            position:absolute;
-            top:-14px;
-            left:50%;
-            transform:translateX(-50%);
-            background:rgba(255,255,255,0.03);
-            border:1px solid rgba(255,204,77,0.25);
-            color:var(--text);
-            font-size:.75rem;
-            font-weight:600;
-            padding:.35rem .7rem;
-            border-radius:999px;
-            backdrop-filter: blur(6px);
-          ">
-            Infraestrutura monitorada 24/7
-          </div>
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFCC4D"/>
+      <stop offset="100%" stop-color="#FF914D"/>
+    </linearGradient>
 
-          <!-- SVG SERVIDOR -->
-          <svg width="260" height="260" viewBox="0 0 260 260" xmlns="http://www.w3.org/2000/svg">
+    <filter id="glass">
+      <feGaussianBlur stdDeviation="6" />
+    </filter>
+  </defs>
 
-            <defs>
-              <linearGradient id="serverStroke" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#FFCC4D"/>
-                <stop offset="100%" stop-color="#FF914D"/>
-              </linearGradient>
-            </defs>
+  <!-- ORBITAL RINGS -->
+  <ellipse cx="180" cy="130" rx="110" ry="50" stroke="rgba(255,204,77,0.25)" stroke-width="1"/>
+  <ellipse cx="180" cy="130" rx="80" ry="36" stroke="rgba(255,145,77,0.18)" stroke-width="1"/>
 
-            <!-- BLOCO 1 -->
-            <rect x="70" y="50" width="120" height="36" rx="12"
-              fill="#0b0f12" stroke="url(#serverStroke)" stroke-width="2"/>
+  <!-- CENTRAL SERVER -->
+  <rect x="120" y="50" width="120" height="160" rx="16"
+        fill="rgba(15,15,18,0.75)" stroke="url(#accent)" stroke-width="1.8"/>
 
-            <!-- BLOCO 2 -->
-            <rect x="60" y="105" width="140" height="36" rx="12"
-              fill="#0b0f12" stroke="url(#serverStroke)" stroke-width="2"/>
+  <!-- SERVER LAYERS -->
+  <rect x="138" y="70" width="84" height="28" rx="8" stroke="#FFDFAF" stroke-width="1"/>
+  <rect x="138" y="110" width="84" height="28" rx="8" stroke="#FFDFAF" stroke-width="1"/>
+  <rect x="138" y="150" width="84" height="28" rx="8" stroke="#FFDFAF" stroke-width="1"/>
 
-            <!-- BLOCO 3 -->
-            <rect x="70" y="160" width="120" height="36" rx="12"
-              fill="#0b0f12" stroke="url(#serverStroke)" stroke-width="2"/>
+  <!-- STATUS LIGHTS -->
+  <circle cx="150" cy="84" r="3" fill="#FFCC4D">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
 
-            <!-- LEDs -->
-            <rect x="82" y="62" width="12" height="12" rx="4" fill="#FFCC4D">
-              <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
-            </rect>
+  <circle cx="150" cy="124" r="3" fill="#FF914D">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
 
-            <rect x="72" y="117" width="12" height="12" rx="4" fill="#FF914D">
-              <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/>
-            </rect>
+  <circle cx="150" cy="164" r="3" fill="#FFCC4D">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
 
-            <rect x="82" y="172" width="12" height="12" rx="4" fill="#FFCC4D">
-              <animate attributeName="opacity" values="0.25;1;0.25" dur="2s" repeatCount="indefinite"/>
-            </rect>
+  <!-- DASHBOARD TEXTS (SVG TEXT) -->
+  <text x="40" y="80" fill="#B9C1C3" font-size="10">Uptime</text>
+  <text x="40" y="94" fill="#FFCC4D" font-size="12">99.9%</text>
 
-            <!-- SCAN -->
-            <rect x="50" y="40" width="160" height="20" fill="rgba(255,204,77,0.3)">
-              <animateTransform attributeName="transform" type="translate" from="0 -30" to="0 260" dur="4s" repeatCount="indefinite"/>
-            </rect>
+  <text x="290" y="110" fill="#B9C1C3" font-size="10" text-anchor="end">Segurança</text>
+  <text x="290" y="124" fill="#FF914D" font-size="12" text-anchor="end">Ativa</text>
 
-          </svg>
+  <text x="40" y="170" fill="#B9C1C3" font-size="10">Monitoramento</text>
+  <text x="40" y="184" fill="#FFCC4D" font-size="12">Tempo real</text>
 
-          <!-- Texto flutuante inferior -->
-          <div style="
-            position:absolute;
-            bottom:-14px;
-            left:50%;
-            transform:translateX(-50%);
-            background:rgba(255,255,255,0.03);
-            border:1px solid rgba(255,145,77,0.25);
-            color:var(--text);
-            font-size:.75rem;
-            font-weight:600;
-            padding:.35rem .7rem;
-            border-radius:999px;
-            backdrop-filter: blur(6px);
-          ">
-            Status ativo • Segurança validada
-          </div>
+</svg>
 
-        </div>
+</div>
 
-      </div>
 
     </div>
   </div>
