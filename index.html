@@ -107,111 +107,152 @@
   </div>
 </nav>
 <!-- HERO -->
-<!-- HERO -->
 <header class="hero" data-reveal>
   <div class="container container-lg">
     <div class="row align-items-center gy-4">
 
-      <!-- TEXTO ESQUERDA -->
+      <!-- TEXTO -->
       <div class="col-lg-6" data-reveal>
 
         <h1>
-          Performance, estabilidade e segurança para o seu site crescer sem limites.
+          Migração, recuperação e performance para sites que não podem falhar.
         </h1>
 
         <p class="lead">
-          Migração, recuperação e otimização com especialistas reais.
-          Zero riscos, máxima velocidade e total transparência.
+          Atendimento direto com especialista. Zero intermediários, zero riscos e total
+          transparência em cada etapa.
         </p>
 
-        <div class="d-flex flex-column flex-sm-row gap-3 mt-3">
+        <div class="d-flex flex-column flex-sm-row gap-3 mt-2">
           <a class="btn btn-primary-gradient btn-lg" href="https://wa.me/SEUNUMERO">
             Falar com especialista agora
           </a>
-
           <a class="btn btn-outline-soft btn-lg" href="#services">
-            Ver serviços
+            Ver serviços disponíveis
           </a>
         </div>
 
-        <!-- MICRO PROVAS -->
-        <div class="d-flex flex-wrap gap-2 mt-4">
+        <!-- PROVAS RÁPIDAS -->
+        <ul class="mt-4" style="color:var(--muted); max-width:520px">
+          <li>Diagnóstico gratuito em até 5 minutos</li>
+          <li>Backup completo antes de qualquer alteração</li>
+          <li>Você acompanha todo o processo em tempo real</li>
+        </ul>
+
+        <!-- TRUST BAR -->
+        <div class="d-flex align-items-center gap-3 mt-4" style="flex-wrap:wrap">
           <div class="card-panel px-3 py-2" style="font-size:.85rem">
-            ✅ Atendimento direto com técnico
+            +120 projetos entregues
           </div>
           <div class="card-panel px-3 py-2" style="font-size:.85rem">
-            ✅ Zero downtime em operações críticas
-          </div>
-          <div class="card-panel px-3 py-2" style="font-size:.85rem">
-            ✅ +120 projetos entregues
+            Zero downtime em migrações críticas
           </div>
         </div>
 
       </div>
 
-<!-- ILUSTRAÇÃO HERO — SERVIDOR + ORBITAIS + STATUS -->
-<div class="card-panel feature-ill d-flex align-items-center justify-content-center p-4">
+      <!-- ILUSTRAÇÃO PREMIUM -->
+      <div class="col-lg-6" data-reveal>
 
-<svg width="100%" height="260" viewBox="0 0 360 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="card-panel feature-ill d-flex align-items-center justify-content-center p-4">
 
-  <defs>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#FFCC4D"/>
-      <stop offset="100%" stop-color="#FF914D"/>
-    </linearGradient>
+          <svg width="100%" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
 
-    <filter id="glass">
-      <feGaussianBlur stdDeviation="6" />
-    </filter>
-  </defs>
+            <defs>
+              <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FFCC4D"/>
+                <stop offset="100%" stop-color="#FF914D"/>
+              </linearGradient>
 
-  <!-- ORBITAL RINGS -->
-  <ellipse cx="180" cy="130" rx="110" ry="50" stroke="rgba(255,204,77,0.25)" stroke-width="1"/>
-  <ellipse cx="180" cy="130" rx="80" ry="36" stroke="rgba(255,145,77,0.18)" stroke-width="1"/>
+              <radialGradient id="energy">
+                <stop offset="0%" stop-color="rgba(255,204,77,0.25)"/>
+                <stop offset="100%" stop-color="transparent"/>
+              </radialGradient>
 
-  <!-- CENTRAL SERVER -->
-  <rect x="120" y="50" width="120" height="160" rx="16"
-        fill="rgba(15,15,18,0.75)" stroke="url(#accent)" stroke-width="1.8"/>
+              <filter id="glass">
+                <feGaussianBlur stdDeviation="3" result="blur"/>
+                <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+              </filter>
+            </defs>
 
-  <!-- SERVER LAYERS -->
-  <rect x="138" y="70" width="84" height="28" rx="8" stroke="#FFDFAF" stroke-width="1"/>
-  <rect x="138" y="110" width="84" height="28" rx="8" stroke="#FFDFAF" stroke-width="1"/>
-  <rect x="138" y="150" width="84" height="28" rx="8" stroke="#FFDFAF" stroke-width="1"/>
+            <!-- BACKGROUND ENERGY -->
+            <circle cx="200" cy="150" r="130" fill="url(#energy)">
+              <animate attributeName="opacity" values="0.1;0.22;0.1" dur="6s" repeatCount="indefinite"/>
+            </circle>
 
-  <!-- STATUS LIGHTS -->
-  <circle cx="150" cy="84" r="3" fill="#FFCC4D">
-    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
-  </circle>
+            <!-- ORBITAS -->
+            <ellipse cx="200" cy="150" rx="130" ry="45" stroke="rgba(255,204,77,0.32)" stroke-width="1">
+              <animateTransform attributeName="transform" type="rotate" from="0 200 150" to="360 200 150" dur="18s" repeatCount="indefinite"/>
+            </ellipse>
 
-  <circle cx="150" cy="124" r="3" fill="#FF914D">
-    <animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/>
-  </circle>
+            <ellipse cx="200" cy="150" rx="100" ry="30" stroke="rgba(255,145,77,0.28)" stroke-width="1">
+              <animateTransform attributeName="transform" type="rotate" from="360 200 150" to="0 200 150" dur="14s" repeatCount="indefinite"/>
+            </ellipse>
 
-  <circle cx="150" cy="164" r="3" fill="#FFCC4D">
-    <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/>
-  </circle>
+            <!-- SERVIDOR CENTRAL -->
+            <rect x="162" y="45" width="76" height="210" rx="20"
+                  fill="rgba(15,15,18,0.88)"
+                  stroke="url(#accent)"
+                  stroke-width="1.6"
+                  filter="url(#glass)" />
 
-  <!-- DASHBOARD TEXTS (SVG TEXT) -->
-  <text x="40" y="80" fill="#B9C1C3" font-size="10">Uptime</text>
-  <text x="40" y="94" fill="#FFCC4D" font-size="12">99.9%</text>
+            <!-- CAMADAS -->
+            <rect x="178" y="75" width="44" height="24" rx="6" stroke="#FFDFAF" stroke-width="1"/>
+            <rect x="178" y="115" width="44" height="24" rx="6" stroke="#FFDFAF" stroke-width="1"/>
+            <rect x="178" y="155" width="44" height="24" rx="6" stroke="#FFDFAF" stroke-width="1"/>
+            <rect x="178" y="195" width="44" height="24" rx="6" stroke="#FFDFAF" stroke-width="1"/>
 
-  <text x="290" y="110" fill="#B9C1C3" font-size="10" text-anchor="end">Segurança</text>
-  <text x="290" y="124" fill="#FF914D" font-size="12" text-anchor="end">Ativa</text>
+            <!-- STATUS LEDS -->
+            <circle cx="170" cy="87" r="3" fill="#FFCC4D">
+              <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
+            </circle>
 
-  <text x="40" y="170" fill="#B9C1C3" font-size="10">Monitoramento</text>
-  <text x="40" y="184" fill="#FFCC4D" font-size="12">Tempo real</text>
+            <circle cx="170" cy="127" r="3" fill="#FF914D">
+              <animate attributeName="opacity" values="0.2;1;0.2" dur="2.4s" repeatCount="indefinite"/>
+            </circle>
 
-</svg>
+            <circle cx="170" cy="167" r="3" fill="#FFCC4D">
+              <animate attributeName="opacity" values="0.2;1;0.2" dur="1.7s" repeatCount="indefinite"/>
+            </circle>
 
-</div>
+            <circle cx="170" cy="207" r="3" fill="#FF914D">
+              <animate attributeName="opacity" values="0.2;1;0.2" dur="2.2s" repeatCount="indefinite"/>
+            </circle>
 
+            <!-- HUD TEXTOS -->
+            <text x="300" y="95" fill="#B9C1C3" font-size="10">Serviço</text>
+            <text x="300" y="110" fill="#FFCC4D" font-size="12">Migração Ativa</text>
+
+            <text x="300" y="150" fill="#B9C1C3" font-size="10">Modo</text>
+            <text x="300" y="165" fill="#FF914D" font-size="12">Alta Performance</text>
+
+            <text x="300" y="205" fill="#B9C1C3" font-size="10">Status</text>
+            <text x="300" y="220" fill="#FFCC4D" font-size="12">Sistema Estável</text>
+
+            <!-- FLUXOS -->
+            <path d="M60 80 C110 80, 120 80, 160 120"
+                  stroke="#FFCC4D" stroke-width="1.2" stroke-dasharray="5 5">
+              <animate attributeName="stroke-dashoffset" values="10;0" dur="2s" repeatCount="indefinite"/>
+            </path>
+
+            <text x="40" y="70" fill="#B9C1C3" font-size="10">Recovery Flow</text>
+
+            <path d="M60 220 C110 220, 120 220, 160 180"
+                  stroke="#FF914D" stroke-width="1.2" stroke-dasharray="4 4">
+              <animate attributeName="stroke-dashoffset" values="8;0" dur="1.6s" repeatCount="indefinite"/>
+            </path>
+
+            <text x="36" y="236" fill="#B9C1C3" font-size="10">Migration Sync</text>
+
+          </svg>
+
+        </div>
+
+      </div>
 
     </div>
   </div>
 </header>
-
-
-
     <!-- SERVICES -->
     <section id="services" class="py-5" data-reveal>
         <div class="container container-lg">
