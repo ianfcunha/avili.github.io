@@ -337,4 +337,79 @@
     transform: translateY(0);
   }
 }
+/* ===== HERO DASHBOARD ENTERPRISE ===== */
+
+.dashboard-enterprise {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.02),
+    rgba(255,255,255,0.005)
+  );
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 22px;
+  padding: 18px;
+  min-height: 360px;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-glow {
+  position: absolute;
+  inset: -60%;
+  background: radial-gradient(circle, rgba(255,204,77,0.10), transparent 60%);
+  animation: pulseGlow 7s ease-in-out infinite;
+  z-index: 0;
+}
+
+/* Linhas de tráfego */
+.traffic-line {
+  stroke: #FFCC4D;
+  stroke-width: 2;
+  stroke-dasharray: 6 10;
+  animation: trafficFlow 1.2s linear infinite;
+  opacity: 0.55;
+}
+
+@keyframes trafficFlow {
+  to {
+    stroke-dashoffset: -16;
+  }
+}
+
+/* Pacotes de dados */
+.traffic-packet {
+  fill: #FF914D;
+  opacity: 0.85;
+  animation: packetMove 2.4s ease-in-out infinite;
+}
+
+@keyframes packetMove {
+  0% { transform: translateX(0); opacity: 0;}
+  20% { opacity: 1;}
+  80% { opacity: 1;}
+  100% { transform: translateX(140px); opacity: 0;}
+}
+
+/* Cards do dashboard */
+.dash-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 12px 14px;
+  backdrop-filter: blur(6px);
+  box-shadow: inset 0 0 0 1px rgba(255,255,255,0.02);
+}
+
+.dash-label {
+  font-size: .75rem;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+  color: #FFCC4D;
+}
+
+.dash-value {
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--text);
+}
 
