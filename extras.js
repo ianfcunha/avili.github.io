@@ -37,3 +37,20 @@ document.querySelectorAll('.hero-proof-count').forEach(el => {
     el.textContent = count + '+';
   }, 20);
 });
+
+
+document.querySelectorAll('.hero-proof-box .count').forEach(el => {
+  const target = +el.getAttribute('data-target');
+  let count = 0;
+  const step = Math.ceil(target / 60);
+
+  const interval = setInterval(() => {
+    count += step;
+    if (count >= target) {
+      count = target;
+      clearInterval(interval);
+    }
+    el.textContent = count;
+  }, 20);
+});
+
