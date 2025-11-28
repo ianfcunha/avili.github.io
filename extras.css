@@ -447,4 +447,15 @@
   letter-spacing: .02em;
 }
 
+.hero-proof-count {
+  border: 1px solid rgba(255,204,77,0.9);
+  color: #FFCC4D;
+  border-radius: 999px;
+  padding: 10px 22px;
+  font-weight: 800;
+  font-size: 1.05rem;
+  background: rgba(20,20,22,0.6);
+  min-width: 100px;
+  text-align: center;
+}
 
