@@ -111,83 +111,143 @@
   <div class="container container-lg">
     <div class="row align-items-center gy-5">
 
-      <!-- ESQUERDA -->
+      <!-- LADO ESQUERDO — COPY DE CONVERSÃO -->
       <div class="col-lg-6">
 
-        <div style="font-size:.75rem; color:#FFCC4D; letter-spacing:.14em;">
-          RESOLVA SEU SITE AGORA
+        <div style="
+          font-size:.75rem;
+          color:#FFCC4D;
+          letter-spacing:.18em;
+          margin-bottom:16px;">
+          MIGRAÇÃO • RECUPERAÇÃO • HOSPEDAGEM GERENCIADA
         </div>
 
-        <h1 style="max-width:560px; font-weight:900; line-height:1.05;">
-          Site lento, instável ou fora do ar? Nós resolvemos hoje.
+        <h1 style="
+          max-width:560px;
+          font-weight:900;
+          letter-spacing:-0.7px;
+          line-height:1.05;">
+          Migre seu site sem risco, sem quedas e sem complicação técnica
         </h1>
 
-        <p class="lead">
-          Migração rápida, recuperação emergencial e hospedagem gerenciada com atendimento direto ao técnico.
+        <p class="lead" style="
+          max-width:520px;
+          font-size:1.05rem;">
+          Eu cuido da migração, recuperação e reserva de infraestrutura para que seu site fique rápido, seguro e estável — sem você precisar entender nada técnico.
         </p>
 
-        <div class="d-flex gap-3 mt-4">
+        <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
           <a class="btn btn-primary-gradient btn-lg" href="#contact">
-            Falar no WhatsApp agora
+            Quero migrar agora
           </a>
           <a class="btn btn-outline-soft btn-lg" href="#diagnostico">
-            Diagnóstico gratuito
+            Receber diagnóstico gratuito
           </a>
+        </div>
+
+        <div style="
+          margin-top:18px;
+          font-size:.9rem;
+          color:var(--muted);">
+          Atendimento direto com especialista • Sem call center • Sem burocracia
         </div>
 
       </div>
 
-      <!-- DIREITA -->
+      <!-- LADO DIREITO — ILUSTRAÇÃO TECNOLÓGICA -->
       <div class="col-lg-6">
 
-        <div class="card-panel" style="position:relative; padding:28px; border-radius:24px; overflow:hidden;">
+        <div style="
+          position:relative;
+          border-radius:24px;
+          padding:28px;
+          background:
+            linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.004));
+          border:1px solid rgba(255,255,255,0.05);
+          box-shadow:
+            inset 0 0 0 1px rgba(255,255,255,0.02),
+            0 40px 100px rgba(0,0,0,0.9);
+          overflow:hidden;
+        ">
 
-          <!-- SVG mais agressivo -->
-          <svg width="100%" height="260" viewBox="0 0 520 260" fill="none">
+          <!-- Glow geral -->
+          <div style="
+            position:absolute;
+            inset:-60%;
+            background: radial-gradient(circle, rgba(255,204,77,0.10), transparent 60%);
+            animation: pulseGlow 10s ease-in-out infinite;
+            pointer-events:none;
+            z-index:0;">
+          </div>
+
+          <!-- SVG Servidores + Fluxo de Dados -->
+          <svg width="100%" height="280" viewBox="0 0 520 280" fill="none" style="position:relative; z-index:2;">
+
             <defs>
-              <linearGradient id="gradTech3" x1="0" y1="0" x2="1" y2="0">
+              <linearGradient id="techStroke" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stop-color="#FFCC4D"/>
                 <stop offset="100%" stop-color="#FF914D"/>
               </linearGradient>
             </defs>
 
-            <path d="M40 130 L480 130" stroke="url(#gradTech3)" stroke-width="2" stroke-dasharray="8 10">
-              <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.2s" repeatCount="indefinite"/>
-            </path>
+            <!-- Servidores -->
+            <rect x="80" y="40" width="100" height="200" rx="16" stroke="url(#techStroke)" stroke-width="2"/>
+            <rect x="210" y="20" width="100" height="220" rx="16" stroke="url(#techStroke)" stroke-width="2"/>
+            <rect x="340" y="40" width="100" height="200" rx="16" stroke="url(#techStroke)" stroke-width="2"/>
+
+            <!-- Luzes de status (LEDs) -->
+            <circle cx="110" cy="80" r="4" fill="#22c55e">
+              <animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="240" cy="60" r="4" fill="#22c55e">
+              <animate attributeName="opacity" values="0.4;1;0.4" dur="1.4s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="370" cy="80" r="4" fill="#22c55e">
+              <animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" repeatCount="indefinite"/>
+            </circle>
+
+            <!-- Ícones de dados entrando -->
+            <circle r="5" fill="#FFCC4D">
+              <animateMotion dur="2.2s" repeatCount="indefinite"
+                path="M20,140 L80,140" />
+            </circle>
+
+            <circle r="5" fill="#FF914D">
+              <animateMotion dur="2.6s" repeatCount="indefinite"
+                path="M500,140 L440,140" />
+            </circle>
+
+            <!-- Linhas de fluxo -->
+            <line x1="20" y1="140" x2="80" y2="140"
+              stroke="#FFCC4D"
+              stroke-dasharray="6 10"
+              stroke-width="2">
+              <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.6s" repeatCount="indefinite"/>
+            </line>
+
+            <line x1="440" y1="140" x2="500" y2="140"
+              stroke="#FF914D"
+              stroke-dasharray="6 10"
+              stroke-width="2">
+              <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="1.8s" repeatCount="indefinite"/>
+            </line>
+
           </svg>
 
-          <!-- CARDS DE PROVA -->
-          <div style="
-            position:absolute;
-            top:20px;
-            left:20px;
-            right:20px;
-            display:grid;
-            grid-template-columns:1fr 1fr;
-            gap:12px;
-          ">
+        </div>
 
-            <div class="hero-card">
-              <strong>+300 migrações realizadas</strong>
-            </div>
+        <!-- PROVAS RÁPIDAS (ABAIXO DA IMAGEM) -->
+        <div class="d-flex flex-wrap gap-2 mt-3">
 
-            <div class="hero-card">
-              <strong>SLA técnico dedicado</strong>
-            </div>
-
-            <div class="hero-card">
-              <strong>Especialistas em WordPress</strong>
-            </div>
-
-            <div class="hero-card">
-              <strong>Infra premium gerenciada</strong>
-            </div>
-
-          </div>
+          <div class="hero-proof">+300 sites migrados</div>
+          <div class="hero-proof">Recuperação de sites fora do ar</div>
+          <div class="hero-proof">Especialista WordPress</div>
+          <div class="hero-proof">Hospedagem 100% gerenciada</div>
 
         </div>
 
       </div>
+
     </div>
   </div>
 </header>
