@@ -111,7 +111,7 @@
   <div class="container container-lg">
     <div class="row align-items-center gy-5">
 
-      <!-- ESQUERDA — COPY PREMIUM / COMERCIAL ELEGANTE -->
+      <!-- LADO ESQUERDO — COPY COMERCIAL + PREMIUM -->
       <div class="col-lg-6">
 
         <div style="
@@ -123,32 +123,35 @@
         </div>
 
         <h1 style="
-          max-width:520px;
+          max-width:540px;
           font-weight:900;
-          letter-spacing:-0.85px;
+          letter-spacing:-0.8px;
           line-height:1.08;">
-          Infraestrutura profissional para projetos que não podem falhar
+          Passe seu site para uma infraestrutura mais segura, rápida e profissional
         </h1>
 
         <p class="lead" style="
-          max-width:480px;
+          max-width:500px;
           font-size:1.03rem;
           line-height:1.6;">
-          Migração segura, recuperação técnica e gestão completa da sua infraestrutura para que seu negócio tenha estabilidade, desempenho e tranquilidade real.
+          Eu realizo a migração completa do seu site, recupero projetos instáveis e entrego um ambiente gerenciado que elimina falhas, lentidão e limitações da sua estrutura atual.
         </p>
 
         <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+
           <a class="btn btn-primary-gradient btn-lg" href="#contact">
-            Iniciar migração
+            Solicitar migração
           </a>
-          <a class="btn btn-outline-soft btn-lg" href="#diagnostico">
-            Solicitar análise
+
+          <a class="btn btn-outline-soft btn-lg" href="#plans">
+            Conhecer estrutura gerenciada
           </a>
+
         </div>
 
       </div>
 
-      <!-- DIREITA — ILUSTRAÇÃO QUE VOCÊ GOSTOU (refinada, não reinventada) -->
+      <!-- LADO DIREITO — ILUSTRAÇÃO (fluxo corrigido) -->
       <div class="col-lg-6">
 
         <div style="
@@ -174,7 +177,7 @@
             z-index:0;">
           </div>
 
-          <!-- SVG ILUSTRAÇÃO (base anterior com melhoria pontual) -->
+          <!-- SVG AJUSTADO -->
           <svg width="100%" height="260" viewBox="0 0 520 260" fill="none" style="position:relative; z-index:2;">
 
             <defs>
@@ -189,73 +192,58 @@
             <rect x="210" y="20" width="100" height="200" rx="16" stroke="url(#techClean)" stroke-width="2"/>
             <rect x="330" y="40" width="100" height="180" rx="16" stroke="url(#techClean)" stroke-width="2"/>
 
-            <!-- LEDs de status (mantidos sutis) -->
-            <circle cx="120" cy="80" r="3" fill="#22c55e">
-              <animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" repeatCount="indefinite"/>
-            </circle>
-            <circle cx="240" cy="60" r="3" fill="#22c55e">
-              <animate attributeName="opacity" values="0.2;1;0.2" dur="1.8s" repeatCount="indefinite"/>
-            </circle>
-            <circle cx="360" cy="80" r="3" fill="#22c55e">
-              <animate attributeName="opacity" values="0.2;1;0.2" dur="2s" repeatCount="indefinite"/>
-            </circle>
+            <!-- LEDs -->
+            <circle cx="120" cy="80" r="3" fill="#22c55e"/>
+            <circle cx="240" cy="60" r="3" fill="#22c55e"/>
+            <circle cx="360" cy="80" r="3" fill="#22c55e"/>
 
-            <!-- Fluxo de dados -->
+            <!-- Linhas de fluxo até a borda do servidor -->
             <line x1="10" y1="130" x2="90" y2="130"
               stroke="#FFCC4D"
               stroke-dasharray="6 12"
-              stroke-width="2"
-              opacity=".6">
+              stroke-width="2">
+              <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="2s" repeatCount="indefinite"/>
+            </line>
+
+            <line x1="510" y1="130" x2="430" y2="130"
+              stroke="#FF914D"
+              stroke-dasharray="6 12"
+              stroke-width="2">
               <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="2.2s" repeatCount="indefinite"/>
             </line>
 
-            <line x1="430" y1="130" x2="510" y2="130"
-              stroke="#FF914D"
-              stroke-dasharray="6 12"
-              stroke-width="2"
-              opacity=".6">
-              <animate attributeName="stroke-dashoffset" from="0" to="-40" dur="2.4s" repeatCount="indefinite"/>
-            </line>
+            <!-- "Pacotes de dados" (ícone neutro, sem entrar no servidor) -->
+            <rect x="70" y="124" width="10" height="10" rx="2" fill="#FFCC4D">
+              <animateMotion dur="2s" repeatCount="indefinite" path="M-60,0 L0,0"/>
+            </rect>
 
-            <!-- Ícone MIGRAÇÃO (seta minimal) -->
-            <path d="M30 122 L44 130 L30 138" fill="#FFCC4D">
-              <animateMotion dur="3s" repeatCount="indefinite" path="M0,0 L70,0"/>
-            </path>
-
-            <!-- Ícone HOSTING (nuvem minimalista) -->
-            <path d="M480 124c3 0 5 2 5 5s-2 5-5 5h-10c-3 0-5-2-5-5s2-5 5-5h10z"
-              fill="#FF914D">
-              <animateMotion dur="3.2s" repeatCount="indefinite" path="M0,0 L-70,0"/>
-            </path>
+            <rect x="440" y="124" width="10" height="10" rx="2" fill="#FF914D">
+              <animateMotion dur="2.2s" repeatCount="indefinite" path="M60,0 L0,0"/>
+            </rect>
 
           </svg>
 
         </div>
 
-        <!-- PROVAS RÁPIDAS — CENTRALIZADAS / DOURADAS / CONTADOR -->
+        <!-- PROVAS RÁPIDAS — CARD ÚNICO (contador + texto juntos) -->
         <div style="
           margin-top:18px;
           display:flex;
           justify-content:center;
           gap:16px;
+          flex-wrap:wrap;
         ">
 
-          <div class="hero-proof-count" data-target="120">0+</div>
-          <div class="hero-proof-count" data-target="40">0+</div>
+          <div class="hero-proof-box">
+            <span class="count" data-target="120">0</span><span class="plus">+</span>
+            <span class="label">sites migrados</span>
+          </div>
 
-        </div>
+          <div class="hero-proof-box">
+            <span class="count" data-target="40">0</span><span class="plus">+</span>
+            <span class="label">ambientes recuperados</span>
+          </div>
 
-        <div style="
-          display:flex;
-          justify-content:center;
-          gap:40px;
-          margin-top:6px;
-          font-size:.78rem;
-          color:rgba(255,255,255,0.9);
-          letter-spacing:.04em;
-        ">
-          <div>sites migrados</div>
-          <div>ambientes recuperados</div>
         </div>
 
       </div>
@@ -263,7 +251,6 @@
     </div>
   </div>
 </header>
-
 
     <!-- SERVICES -->
     <section id="services" class="py-5" data-reveal>
