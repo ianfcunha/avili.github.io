@@ -448,14 +448,16 @@
 }
 
 .hero-proof-count {
-  border: 1px solid rgba(255,204,77,0.9);
+  border: 1px solid rgba(255,204,77,1);
   color: #FFCC4D;
   border-radius: 999px;
-  padding: 10px 22px;
+  padding: 10px 24px;
   font-weight: 800;
   font-size: 1.05rem;
-  background: rgba(20,20,22,0.6);
-  min-width: 100px;
+  background: rgba(14,14,16,0.55);
+  min-width: 110px;
   text-align: center;
+  box-shadow: 0 0 0 1px rgba(255,204,77,0.08), 0 0 20px rgba(255,204,77,0.04);
 }
+
 
