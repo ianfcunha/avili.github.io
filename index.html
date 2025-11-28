@@ -107,60 +107,190 @@
   </div>
 </nav>
 
-<header class="hero" data-reveal>
+<header class="hero hero-saas" data-reveal>
   <div class="container container-lg">
     <div class="row align-items-center gy-5">
 
+      <!-- ESQUERDA — COPY MAIS COMERCIAL -->
       <div class="col-lg-6">
 
-        <div style="font-size:.78rem; color:#FFCC4D; letter-spacing:.12em;">
-          PROTEÇÃO • DESEMPENHO • ESCALABILIDADE
+        <!-- Badge forte -->
+        <div style="
+          display:inline-flex;
+          align-items:center;
+          gap:8px;
+          padding:6px 14px;
+          border-radius:999px;
+          font-size:.75rem;
+          font-weight:600;
+          background:rgba(255,204,77,0.08);
+          border:1px solid rgba(255,204,77,0.25);
+          color:#FFCC4D;
+          margin-bottom:18px;">
+          Migração • Recuperação • Hospedagem Gerenciada
         </div>
 
-        <h1 style="max-width:560px; font-weight:900; line-height:1.1;">
-          Seu site protegido, rápido e estável — sem você precisar se preocupar
+        <h1 style="
+          max-width:560px;
+          font-weight:900;
+          letter-spacing:-0.7px;
+          line-height:1.1;">
+          Coloque seu site em um ambiente profissional, rápido e seguro — sem riscos
         </h1>
 
-        <p class="lead">
-          Nós migramos, recuperamos e gerenciamos toda a sua infraestrutura para você focar apenas no seu negócio.
+        <p class="lead" style="max-width:520px; font-size:1.05rem;">
+          Migramos, recuperamos e gerenciamos sua infraestrutura para você parar de perder tempo com problemas técnicos.
         </p>
 
-        <div class="d-flex gap-3 mt-4">
-          <a class="btn btn-primary-gradient btn-lg" href="#">
-            Começar agora
+        <!-- BOTÕES MAIS AGRESSIVOS -->
+        <div class="d-flex flex-column flex-sm-row gap-3 mt-4">
+
+          <a class="btn btn-primary-gradient btn-lg" href="#contact">
+            Quero migrar agora
           </a>
-          <a class="btn btn-outline-soft btn-lg" href="#">
-            Ver como funciona
+
+          <a class="btn btn-outline-soft btn-lg" href="#plans">
+            Ver planos disponíveis
           </a>
+
+        </div>
+
+        <!-- PROVAS RÁPIDAS (micro social proof) -->
+        <div class="d-flex flex-wrap gap-2 mt-4">
+
+          <div style="
+            background:rgba(255,255,255,0.03);
+            border:1px solid rgba(255,255,255,0.06);
+            border-radius:999px;
+            padding:6px 12px;
+            font-size:.82rem;
+            color:var(--muted);">
+            +120 sites migrados
+          </div>
+
+          <div style="
+            background:rgba(255,255,255,0.03);
+            border:1px solid rgba(255,255,255,0.06);
+            border-radius:999px;
+            padding:6px 12px;
+            font-size:.82rem;
+            color:var(--muted);">
+            99,9% uptime médio
+          </div>
+
+          <div style="
+            background:rgba(255,255,255,0.03);
+            border:1px solid rgba(255,255,255,0.06);
+            border-radius:999px;
+            padding:6px 12px;
+            font-size:.82rem;
+            color:var(--muted);">
+            Suporte humano real
+          </div>
+
         </div>
 
       </div>
 
+      <!-- DIREITA — ILUSTRAÇÃO SAAS MAIS RICA -->
       <div class="col-lg-6">
 
-        <div class="card-panel" style="padding:28px; border-radius:22px;">
+        <div style="
+          position:relative;
+          border-radius:24px;
+          padding:28px;
+          background:
+            linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.004));
+          border:1px solid rgba(255,255,255,0.05);
+          box-shadow:
+            inset 0 0 0 1px rgba(255,255,255,0.02),
+            0 40px 100px rgba(0,0,0,0.9);
+          overflow:hidden;
+        ">
 
-          <svg width="100%" height="300" viewBox="0 0 520 300" fill="none">
+          <!-- Glow animado -->
+          <div style="
+            position:absolute;
+            inset:-60%;
+            background: radial-gradient(circle, rgba(255,204,77,0.10), transparent 60%);
+            animation: pulseGlow 10s ease-in-out infinite;
+            pointer-events:none;
+            z-index:0;">
+          </div>
+
+          <!-- SVG SaaS avançado -->
+          <svg width="100%" height="300" viewBox="0 0 520 300" fill="none" style="position:relative; z-index:2;">
 
             <defs>
-              <linearGradient id="shieldGrad" x1="0" y1="0" x2="1" y2="1">
+              <linearGradient id="saasGradMain" x1="0" y1="0" x2="1" y2="1">
                 <stop offset="0%" stop-color="#FFCC4D"/>
                 <stop offset="100%" stop-color="#FF914D"/>
               </linearGradient>
             </defs>
 
-            <!-- Escudo -->
-            <path d="M260 50 L400 110 V180c0 60-52 100-140 125C172 280 120 240 120 180V110z"
-              stroke="url(#shieldGrad)"
-              stroke-width="2"
-              fill="none"/>
+            <!-- Cards (simulando módulos SaaS) -->
+            <rect x="30" y="50" width="200" height="70" rx="20" stroke="url(#saasGradMain)" stroke-width="2"/>
+            <rect x="290" y="50" width="200" height="70" rx="20" stroke="url(#saasGradMain)" stroke-width="2"/>
 
-            <!-- Centro pulsante -->
-            <circle cx="260" cy="170" r="10" fill="#22c55e">
+            <rect x="30" y="190" width="200" height="70" rx="20" stroke="url(#saasGradMain)" stroke-width="2"/>
+            <rect x="290" y="190" width="200" height="70" rx="20" stroke="url(#saasGradMain)" stroke-width="2"/>
+
+            <!-- Linhas de conexão animadas -->
+            <line x1="230" y1="85" x2="290" y2="85"
+              stroke="#FFCC4D"
+              stroke-width="2"
+              stroke-dasharray="6 10">
+              <animate attributeName="stroke-dashoffset" from="0" to="-32" dur="1.5s" repeatCount="indefinite"/>
+            </line>
+
+            <line x1="230" y1="225" x2="290" y2="225"
+              stroke="#FF914D"
+              stroke-width="2"
+              stroke-dasharray="6 10">
+              <animate attributeName="stroke-dashoffset" from="0" to="-32" dur="1.8s" repeatCount="indefinite"/>
+            </line>
+
+            <!-- Núcleos pulsantes -->
+            <circle cx="260" cy="150" r="9" fill="#22c55e">
               <animate attributeName="r" values="8;14;8" dur="1.8s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/>
             </circle>
 
           </svg>
+
+          <!-- Overlay sutil (mini produto UI fake) -->
+          <div style="
+            position:absolute;
+            left:18px;
+            right:18px;
+            bottom:18px;
+            border-radius:16px;
+            background:rgba(12,12,14,0.88);
+            border:1px solid rgba(255,255,255,0.06);
+            backdrop-filter:blur(10px);
+            padding:12px 16px;
+            display:flex;
+            justify-content:space-between;
+            font-size:.85rem;
+            z-index:3;
+          ">
+
+            <div style="color:var(--muted);">
+              Migração<br>
+              <span style="color:var(--text); font-weight:700;">Ativa</span>
+            </div>
+
+            <div style="color:var(--muted); text-align:center;">
+              Hospedagem<br>
+              <span style="color:var(--text); font-weight:700;">Gerenciada</span>
+            </div>
+
+            <div style="color:var(--muted); text-align:right;">
+              Monitoramento<br>
+              <span style="color:var(--text); font-weight:700;">24/7</span>
+            </div>
+
+          </div>
 
         </div>
 
