@@ -460,4 +460,32 @@
   box-shadow: 0 0 0 1px rgba(255,204,77,0.08), 0 0 20px rgba(255,204,77,0.04);
 }
 
+.hero-proof-box {
+  display:flex;
+  align-items:center;
+  gap:6px;
+  border: 1px solid rgba(255,204,77,0.9);
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: .85rem;
+  background: rgba(255,204,77,0.05);
+  color: rgba(255,255,255,0.95);
+  letter-spacing:.02em;
+}
+
+.hero-proof-box .count {
+  font-weight:900;
+  color:#FFCC4D;
+  font-size:.95rem;
+}
+
+.hero-proof-box .plus {
+  color:#FFCC4D;
+  font-weight:900;
+}
+
+.hero-proof-box .label {
+  margin-left:4px;
+  opacity:.95;
+}
 
