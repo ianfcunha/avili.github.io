@@ -106,59 +106,67 @@
     </div>
   </div>
 </nav>
-<!-- HERO — VARIAÇÃO 3 (Shield System) -->
-<header class="hero" data-reveal>
+<header class="hero hero-limestone" data-reveal>
   <div class="container container-lg">
     <div class="row align-items-center gy-5">
 
+      <!-- ESQUERDA -->
       <div class="col-lg-6">
 
-        <div style="font-size:.75rem; color:rgba(255,204,77,0.9); letter-spacing:.12em; text-transform:uppercase;">
-          Proteção e estabilidade digital
+        <div style="font-size:.75rem; letter-spacing:.14em; color:#FFCC4D; margin-bottom:16px;">
+          ENTERPRISE MANAGED INFRASTRUCTURE
         </div>
 
-        <h1 style="max-width:540px; font-weight:800;">
-          Camada extra de segurança, desempenho e controle total do seu ambiente
+        <h1 style="max-width:560px; font-weight:900; letter-spacing:-0.7px; line-height:1.1;">
+          Infraestrutura séria para negócios que não podem falhar
         </h1>
 
         <p class="lead" style="max-width:520px;">
-          Estrutura técnica projetada para proteger seus dados, manter seu site no ar e resolver falhas antes que virem problema.
+          Migração, recuperação e hospedagem com padrão de datacenter.  
+          Baixa latência. Alta disponibilidade. Resposta real.
         </p>
 
         <div class="d-flex gap-3 mt-4">
-          <a class="btn btn-primary-gradient btn-lg" href="https://wa.me/SEUNUMERO">
-            Ativar proteção agora
+          <a class="btn btn-primary-gradient btn-lg" href="#">
+            Falar com engenheiro de infra
           </a>
-          <a class="btn btn-outline-soft btn-lg" href="#services">
-            Ver recursos
+          <a class="btn btn-outline-soft btn-lg" href="#infra">
+            Ver arquitetura real
           </a>
         </div>
 
       </div>
 
+      <!-- DIREITA -->
       <div class="col-lg-6">
 
-        <div class="card-panel" style="position:relative; overflow:hidden; border-radius:22px; padding:30px;">
+        <div class="card-panel" style="padding:24px; border-radius:22px; position:relative; overflow:hidden;">
 
-          <svg width="100%" height="280" viewBox="0 0 420 280" fill="none">
+          <!-- SVG “Datacenter productizado” -->
+          <svg viewBox="0 0 520 300" width="100%" height="300" fill="none">
 
             <defs>
-              <linearGradient id="shieldStroke" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#FFCC4D"/>
-                <stop offset="100%" stop-color="#FF914D"/>
+              <linearGradient id="rack" x1="0" y1="0" x2="1" y2="1">
+                <stop stop-color="#FFCC4D"/>
+                <stop stop-color="#FF914D"/>
               </linearGradient>
             </defs>
 
-            <!-- Escudo -->
-            <path d="M210 50 L310 90 V150c0 55-38 90-100 110-62-20-100-55-100-110V90z"
-                  fill="#0c1014"
-                  stroke="url(#shieldStroke)"
-                  stroke-width="2"/>
+            <!-- Racks -->
+            <rect x="40" y="50" width="120" height="200" rx="16" stroke="url(#rack)" fill="#0b0f13"/>
+            <rect x="200" y="30" width="120" height="220" rx="16" stroke="url(#rack)" fill="#0b0f13"/>
+            <rect x="360" y="50" width="120" height="200" rx="16" stroke="url(#rack)" fill="#0b0f13"/>
 
-            <!-- Núcleo -->
-            <circle cx="210" cy="150" r="12" fill="#22c55e">
-              <animate attributeName="r" values="10;16;10" dur="2s" repeatCount="indefinite"/>
+            <!-- LEDs -->
+            <circle cx="70" cy="90" r="4" fill="#22c55e">
+              <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
             </circle>
+
+            <!-- Backbone linha -->
+            <line x1="100" y1="260" x2="420" y2="260"
+              stroke="#FFCC4D" stroke-width="2" stroke-dasharray="8 12">
+              <animate attributeName="stroke-dashoffset" from="0" to="-60" dur="1.7s" repeatCount="indefinite"/>
+            </line>
 
           </svg>
 
@@ -169,6 +177,7 @@
     </div>
   </div>
 </header>
+
 
 
     <!-- SERVICES -->
