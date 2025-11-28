@@ -22,3 +22,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   revealEls.forEach(el => observer.observe(el));
 });
+
+document.querySelectorAll('.hero-proof-count').forEach(el => {
+  let target = +el.getAttribute('data-target');
+  let count = 0;
+  let step = Math.ceil(target / 60);
+
+  const interval = setInterval(() => {
+    count += step;
+    if (count >= target) {
+      count = target;
+      clearInterval(interval);
+    }
+    el.textContent = count + '+';
+  }, 20);
+});
+
