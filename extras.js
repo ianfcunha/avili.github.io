@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 document.querySelectorAll('.hero-proof-count').forEach(el => {
-  let target = +el.getAttribute('data-target');
+  const target = +el.getAttribute('data-target');
   let count = 0;
-  let step = Math.ceil(target / 60);
+  const step = Math.ceil(target / 60);
 
   const interval = setInterval(() => {
     count += step;
@@ -37,4 +37,3 @@ document.querySelectorAll('.hero-proof-count').forEach(el => {
     el.textContent = count + '+';
   }, 20);
 });
-
